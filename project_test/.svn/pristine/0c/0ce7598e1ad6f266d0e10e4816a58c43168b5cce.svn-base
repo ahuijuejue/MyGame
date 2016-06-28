@@ -1,0 +1,13 @@
+{
+	"version" : "1.0.0",
+	"output" : "/srcc/data.zip",
+	"input" : "../src/",
+	"exclude" : [
+		"cocos",
+		"framework",
+		"update"
+	],
+	"compile_scripts" : "$QUICK_V3_ROOT/quick/bin/compile_scripts.sh",
+	"e" : "xxtea_chunk",
+	"ek" : "ChuYunLi"
+}

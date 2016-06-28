@@ -1,0 +1,50 @@
+local UnionListData = class("UnionListData")
+
+function UnionListData:ctor()
+	self.unionShowList = {}  -- 加入公会列表显示
+	self.unionFindList = {}  -- 查找公会结果
+
+    --礼拜状态
+    self.isSignIn = {"0", "0", "0"}
+end
+
+function UnionListData:insertFindData( model )
+	table.insert(self.unionFindList, model)
+end
+
+function UnionListData:insertShowData( model )
+	if not self:isContainUnion(model) then
+		table.insert(self.unionShowList, model)
+	end
+end
+
+function UnionListData:isContainUnion( model )
+	for i,v in ipairs(self.unionShowList) do
+		if model.id == v.id then
+		   return true
+		end
+	end
+	return false
+end
+
+function UnionListData:setIsSignIn(signInArr)
+	for i=1,#signInArr do
+    	self.isSignIn[i] = signInArr[i]
+    end
+end
+
+--删除聊天数据
+function UnionListData:cleanData()
+	for i,v in ipairs(self.unionFindList) do
+		v = nil
+	end
+	self.unionFindList = {}
+
+	for i,v in ipairs(self.unionShowList) do
+		v = nil
+	end
+	self.unionShowList = {}
+
+end
+
+return UnionListData

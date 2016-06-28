@@ -1,0 +1,15 @@
+local SendUnionMailResponse = class("SendUnionMailResponse")
+function SendUnionMailResponse:SendUnionMailResponse(data)
+
+
+end
+function SendUnionMailResponse:ctor()
+	--响应消息号
+	self.order = 30020
+	--返回结果,1:成功,2:内容超长，-1：不是会长
+	self.result =  ""
+	--邮件内容
+	self.param1 =  ""	
+end
+
+return SendUnionMailResponse

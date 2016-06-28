@@ -1,0 +1,37 @@
+local ShowUnionInfoResponse = class("ShowUnionInfoResponse")
+function ShowUnionInfoResponse:ShowUnionInfoResponse(data)
+
+
+end
+function ShowUnionInfoResponse:ctor()
+	--响应消息号
+	self.order = 30006
+	--返回结果,1 成功
+	self.result =  ""
+	--是否加入了公会，1：已加入，2：未加入
+	self.param1 =  ""
+	--公会ID
+	self.param2 =  ""
+	--公会名称
+	self.param3 =  ""
+	--公会图标
+	self.param4 =  ""
+	--公会经验
+	self.param5 =  ""
+	--公会会员数量
+	self.param6 =  ""
+	--公会会员数量上限
+	self.param7 =  ""
+	--申请加入等级
+	self.param8 =  ""
+	--申请类型
+	self.param9 =  ""
+	--公会说明
+	self.param10 =  ""
+	--工会成员信息
+	self.a_param1 =  ""
+	--工会信息
+	self.a_param2 =  ""	
+end
+
+return ShowUnionInfoResponse

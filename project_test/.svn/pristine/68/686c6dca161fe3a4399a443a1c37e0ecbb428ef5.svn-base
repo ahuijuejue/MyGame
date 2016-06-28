@@ -1,0 +1,458 @@
+local WealthLayer = class("WealthLayer",function()
+	return display.newNode()
+end)
+local scheduler = require("framework.scheduler")
+local boardImage = "wealthy_board.png"
+local talkImage = "wealth_talk.png"
+local btn1 = "wealth_btn1.png"
+local btn2 = "wealth_btn2.png"
+
+function WealthLayer:ctor()
+	self.movePos1 = 1
+	self.movePos2 = 1
+	self.movePos3 = 1
+	self.movePos4 = 1
+	self.movePos5 = 1
+
+	self.serverNum = {}
+
+	self.saveNum1 = 1
+	self.saveNum2 = 1
+	self.saveNum3 = 1
+	self.saveNum4 = 1
+	self.saveNum5 = 1
+
+	self.closeFunc = nil
+	self:initView()	
+	self:initData()
+
+	self:addNodeEventListener(cc.NODE_EVENT,function (event)
+		if event.name == "enter" then
+			self:onEnter()
+		elseif event.name == "exit" then
+			self:onExit()
+		end
+	end)
+
+	CommonView.animation_show_out(self.board)
+end
+
+function WealthLayer:initData()
+	self.arrNums1 = {}
+	self.arrNums2 = {}
+	self.arrNums3 = {}
+	self.arrNums4 = {}
+	self.arrNums5 = {}
+	for i=0,9 do
+		local numSprite1 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite1)
+		numSprite1:setVisible(false)
+
+		local numSprite2 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite2)
+		numSprite2:setVisible(false)
+
+		local numSprite3 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite3)
+		numSprite3:setVisible(false)
+
+		local numSprite4 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite4)
+		numSprite4:setVisible(false)
+
+		local numSprite5 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite5)
+		numSprite5:setVisible(false)
+
+		table.insert(self.arrNums1,numSprite1)
+		table.insert(self.arrNums2,numSprite2)
+		table.insert(self.arrNums3,numSprite3)
+		table.insert(self.arrNums4,numSprite4)
+		table.insert(self.arrNums5,numSprite5)
+	end
+	--初始位置
+	self.arrNums1[1]:setVisible(true)
+	self.arrNums1[1]:setPosition(465, 311)
+
+	self.arrNums2[1]:setVisible(true)
+	self.arrNums2[1]:setPosition(547, 311)
+
+	self.arrNums3[1]:setVisible(true)
+	self.arrNums3[1]:setPosition(628, 311)
+
+	self.arrNums4[1]:setVisible(true)
+	self.arrNums4[1]:setPosition(710, 311)
+
+	self.arrNums5[1]:setVisible(true)
+	self.arrNums5[1]:setPosition(790, 311)
+end
+
+function WealthLayer:initView()
+	CommonView.blackLayer2()
+	:addTo(self)
+
+	self.board = display.newSprite(boardImage)
+	:addTo(self)
+	:pos(display.cx,display.cy+20)
+
+	-- 关闭按钮
+	self.closeBtn = CommonButton.close():addTo(self.board):pos(870,525)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close()
+		if self.closeFunc then
+			self.closeFunc()
+		end
+	end)
+
+	local talkSprite = display.newSprite(talkImage)
+	talkSprite:setPosition(130,300)
+	self.board:addChild(talkSprite)
+
+    self.btn = cc.ui.UIPushButton.new({normal = btn1,pressed = btn2}, options)
+    :addTo(self.board)
+    :pos(770,125)
+    :onButtonClicked(function ()
+    	if GamblingModel.cost > UserData.diamond then
+    		showToast({text = "钻石不足",color = display.COLOR_RED, size = 28})
+    	elseif GamblingModel.cost == 0 and GamblingModel.maxBonus == 0 then
+    		showToast({text = "次数不足，提升VIP等级可获得更多次数",color = display.COLOR_RED, size = 28})
+    	else
+    		showLoading()
+		    NetHandler.gameRequest("GodOfFortune")
+    	end
+    end)
+
+    self:createTableView()
+    self:createLabelView()
+	self:addTimeWidget()
+end
+
+function WealthLayer:createTableView()
+	self.listView = cc.TableView:create(cc.size(320,165))
+	self.listView:setPosition(50,20)
+	self.listView:setDirection(cc.SCROLLVIEW_DIRECTION_VERTICAL)
+	self.listView:setVerticalFillOrder(cc.TABLEVIEW_FILL_TOPDOWN)
+    self.listView:setDelegate()
+
+	self.listView:registerScriptHandler(handler(self, self.cellSizeForTable), cc.TABLECELL_SIZE_FOR_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.tableCellAtIndex), cc.TABLECELL_SIZE_AT_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.numberOfCellsInTableView), cc.NUMBER_OF_CELLS_IN_TABLEVIEW)
+	self.board:addChild(self.listView)
+end
+
+function WealthLayer:updateTable()
+	self.listView:reloadData()
+    self.listView:setContentOffset(cc.p(0,0), false)
+end
+
+function WealthLayer:cellSizeForTable(table,idx)
+	return 32
+end
+
+function WealthLayer:tableCellAtIndex(table,idx)
+	local label = createOutlineLabel({text = GamblingModel.info[idx+1],size = 24})
+	return label
+end
+
+function WealthLayer:numberOfCellsInTableView(table)
+	return #GamblingModel.info
+end
+
+function WealthLayer:createLabelView()
+	local iconSprite1 = display.newSprite("Diamond.png")
+	iconSprite1:setPosition(600,105)
+	self.board:addChild(iconSprite1)
+
+	self.maxLabel = createOutlineLabel({text = "", size = 28})
+	self.maxLabel:setPosition(520,102)
+	self.board:addChild(self.maxLabel)
+
+	self.needLabel = createOutlineLabel({text = "", size = 22})
+	self.needLabel:setAnchorPoint(0,0.5)
+	self.needLabel:setPosition(400,30)
+	self.board:addChild(self.needLabel)
+
+	self.iconSprite2 = display.newSprite("Diamond.png")
+	self.iconSprite2:setAnchorPoint(0,0.5)
+	self.board:addChild(self.iconSprite2)
+
+	self.haveLabel = createOutlineLabel({text = "", size = 22})
+	self.haveLabel:setAnchorPoint(0,0.5)
+	self.haveLabel:setPosition(645,30)
+	self.board:addChild(self.haveLabel)
+
+	self.iconSprite3 = display.newSprite("Diamond.png")
+	self.iconSprite3:setAnchorPoint(0,0.5)
+	self.iconSprite3:setPosition(825,33)
+	self.board:addChild(self.iconSprite3)
+end
+
+function WealthLayer:updateView()
+	self.maxLabel:setString(tostring(GamblingModel.maxBonus))
+
+	local str = string.format("本次需要 %d",GamblingModel.cost)
+	self.needLabel:setString(str)
+
+	local x = self.needLabel:getContentSize().width
+	self.iconSprite2:setPosition(411+x,33)
+
+	str = string.format("当前拥有 %d",UserData.diamond)
+	self.haveLabel:setString(str)
+
+	local x = self.haveLabel:getContentSize().width
+	self.iconSprite3:setPosition(656+x,33)
+end
+
+function WealthLayer:doGambling()
+	local resultStr = string.format("%05d",GamblingModel.bonus)
+	for i=1,5 do
+		local num = tonumber(string.sub(resultStr,i,i))
+		self.serverNum[i] = num
+	end
+
+	self.btn:setButtonEnabled(false)
+    self.closeBtn:setButtonEnabled(false)
+
+    self:createNumPos1()
+    self:createNumPos2()
+    self:createNumPos3()
+    self:createNumPos4()
+    self:createNumPos5()
+
+    self.arrNums1[self.saveNum1]:setVisible(false)
+    self.arrNums2[self.saveNum2]:setVisible(false)
+    self.arrNums3[self.saveNum3]:setVisible(false)
+    self.arrNums4[self.saveNum4]:setVisible(false)
+    self.arrNums5[self.saveNum5]:setVisible(false)
+end
+
+--第一个数字
+local j = 1
+function WealthLayer:createNumPos1()
+	local time = 0.01
+
+	if j >= 11 then
+		j = 1	
+	end
+	if self.movePos1 < 50 then
+		time = 0.15 - math.pow(self.movePos1,2)*0.0008
+	else 
+		time = self.movePos1 * 0.005
+	end
+	self.arrNums1[j]:setPosition(465, 311)
+	self.arrNums1[j]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums1[j]:setVisible(false)
+		self.movePos1 = self.movePos1+1
+			j = j + 1
+
+			if self.movePos1 < 62+self.serverNum[1] then
+				self:createNumPos1()
+			else
+				self.arrNums1[j-1]:setVisible(true)
+				self.movePos1 = 1
+				self.saveNum1 = j-1
+				j = 1
+				self.btn:setButtonEnabled(true)
+				self.closeBtn:setButtonEnabled(true)
+			end
+	end, time)
+end
+--第二个数字
+local k = 1
+function WealthLayer:createNumPos2()
+	local time = 0.01
+
+	if k >= 11 then
+		k = 1	
+	end
+	if self.movePos2 < 50 then
+		time = 0.10 - math.pow(self.movePos2,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos2 * 0.005
+	end
+	self.arrNums2[k]:setPosition(547, 311)
+	self.arrNums2[k]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums2[k]:setVisible(false)
+		self.movePos2 = self.movePos2+1
+			k = k + 1
+
+			if self.movePos2 < 62+self.serverNum[2] then
+				self:createNumPos2()
+			else
+				self.arrNums2[k-1]:setVisible(true)
+				self.movePos2 = 1
+				self.saveNum2 = k-1
+				k = 1
+			end
+			
+		
+	end, time)
+
+end
+
+--第三个数字
+local h = 1
+function WealthLayer:createNumPos3()
+	local time = 0.01
+
+	
+	if h >= 11 then
+		h = 1	
+	end
+	if self.movePos3 < 50 then
+		time = 0.07 - math.pow(self.movePos3,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos3 * 0.004
+	end
+	self.arrNums3[h]:setPosition(628, 311)
+	self.arrNums3[h]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums3[h]:setVisible(false)
+		self.movePos3 = self.movePos3+1
+			h = h + 1
+
+			if self.movePos3 < 62+self.serverNum[3] then
+				self:createNumPos3()
+			else
+				self.arrNums3[h-1]:setVisible(true)
+				self.movePos3 = 1
+				self.saveNum3 = h-1
+				h = 1
+			end
+			
+		
+	end, time)
+end
+
+--第四个数字
+local l = 1
+function WealthLayer:createNumPos4()
+	local time = 0.01
+
+	
+	if l >= 11 then
+		l = 1	
+	end
+	if self.movePos4 < 50 then
+		time = 0.06 - math.pow(self.movePos4,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos4 * 0.003
+	end
+	self.arrNums4[l]:setPosition(710, 311)
+	self.arrNums4[l]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums4[l]:setVisible(false)
+		self.movePos4 = self.movePos4+1
+			l = l + 1
+
+			if self.movePos4 < 62+self.serverNum[4] then
+				self:createNumPos4()
+			else
+				self.arrNums4[l-1]:setVisible(true)
+				self.movePos4 = 1
+				self.saveNum4 = l-1
+				l = 1
+			end
+			
+		
+	end, time)
+end
+
+--第5个数字
+local o = 1
+function WealthLayer:createNumPos5()
+	local time = 0.01
+
+	
+	if o >= 11 then
+		o = 1	
+	end
+	if self.movePos5 < 50 then
+		time = 0.05 - math.pow(self.movePos5,2)*0.0008
+	else 
+		time = self.movePos4 * 0.002
+	end
+	self.arrNums5[o]:setPosition(790, 311)
+	self.arrNums5[o]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums5[o]:setVisible(false)
+		self.movePos5 = self.movePos5+1
+			o = o + 1
+
+			if self.movePos5 < 62+self.serverNum[5] then
+				self:createNumPos5()
+			else
+				self.arrNums5[o-1]:setVisible(true)
+				self.movePos5 = 1
+				self.saveNum5 = o-1
+				o = 1
+			end
+			
+		
+	end, time)
+end
+
+--时间控件
+function WealthLayer:addTimeWidget()
+	self.sprite = display.newSprite()
+    :align(display.CENTER)
+    :addTo(self.board)
+    :pos(670, 470)
+
+    self.timeLabel = base.Label.new({text="", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(745, 447)
+end
+
+-- 更新时间显示
+function WealthLayer:updateTimeShow()
+	self.leftTime = self.leftTime - 1
+	if self.leftTime <= 0 then
+		self.closeFunc()
+	end
+	local date = convertSecToDate(self.leftTime)
+    local timestring = string.format("%02d:%02d:%02d", date.hour, date.min, date.sec)
+    if date.day < 8 then
+        self.sprite:setTexture(string.format("font5_%d.png", date.day))
+    end
+    self.timeLabel:setString(timestring)
+end
+
+function WealthLayer:startTimer()
+    if self.timeHandle then
+        return
+    end
+    self.timeHandle = scheduler.scheduleGlobal(handler(self,self.updateTimeShow),1)
+end
+
+function WealthLayer:stopTimer()
+    if self.timeHandle then
+        scheduler.unscheduleGlobal(self.timeHandle)
+        self.timeHandle = nil
+    end
+end
+
+function WealthLayer:onEnter()
+	self.leftTime = GamblingModel.closeTime - UserData:getServerSecond()
+	self:updateTimeShow()
+	self:updateView()
+	self:updateTable()
+	self:startTimer()
+end
+
+function WealthLayer:onExit()
+	self:stopTimer()
+end
+
+return WealthLayer

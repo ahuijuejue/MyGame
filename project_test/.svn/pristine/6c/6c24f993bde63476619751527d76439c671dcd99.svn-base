@@ -1,0 +1,148 @@
+
+local ChatLeftView = class("ChatLeftView", function()
+	return display.newNode()
+end)
+
+function ChatLeftView:ctor()
+	self:initData()
+	self:initView()
+
+	self:setTouchEnabled(true)
+	self:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+		if event.name == "began" then
+			local  point = {x = event.x, y =event.y}
+			if self:touchInNode(point) then
+				self.isPush = true
+				self:setTouchSwallowEnabled(true)
+			else
+				self:setTouchSwallowEnabled(false)
+			end
+			return self.isPush
+		elseif event.name == "moved" then
+		elseif event.name == "ended" then
+			local  point = {x = event.x, y = event.y}
+			if self:touchInNode(point) and self.isPush then
+				self.delegate.chatView.sectionIndex = 2
+				self.delegate.chatView.chatMsg = ""
+				if not self.delegate.chatView.textfield then
+					self.delegate.chatView:createEditBox()
+				end
+				self.delegate.chatView:show()
+				self.delegate.chatView:updateData()
+				self.delegate.chatView:updateView()
+			end
+			self.isPush = false
+		end
+    end)
+
+end
+
+function ChatLeftView:touchInNode(point)
+	point = self.back:convertToNodeSpace(point)
+	local roleRect = {x = 0, y = 0, width = 360, height = 115}
+	return cc.rectContainsPoint(roleRect,point)
+end
+
+function ChatLeftView:initData()
+	self.showData = {}
+	self.chatCounts = 1
+	self.isPush = false
+end
+
+function ChatLeftView:initView()
+	self.back = display.newSprite("left_back.png")
+    :pos(display.left+130,display.bottom)
+    :addTo(self)
+end
+
+function ChatLeftView:createChatNode(data)
+	local itemHeight = 0
+	local cell = display.newNode()
+	if data.channelType == "2" then -- 系统消息
+		local gg  = "<{255,44,44}[公告]>"
+	    local msg = base.TalkLabel.new({
+	    		text  = gg..data.msg,
+				size  = 18,
+				dimensions = cc.size(250,0),
+				scale = 0.28,
+	    	})
+	    itemHeight = 20*msg:getLines()
+		if msg:getLines() == 1 then
+	        msg:pos(55, 10):addTo(cell)
+	        display.newSprite("System_Tip.png"):pos(25,20):scale(0.7):addTo(cell)
+		else
+			msg:pos(55, itemHeight+7-20*msg:getLines()):addTo(cell)
+	        display.newSprite("System_Tip.png"):pos(25,itemHeight-5):scale(0.7):addTo(cell)
+		end
+	elseif data.channelType == "3" then -- 世界消息
+		local name = string.format("<{0,248,248}%s:>", data.name)
+		local msg = string.format(name.."%s", data.msg)
+		local msg = base.TalkLabel.new({
+	    		text  = msg,
+				size  = 18,
+				dimensions = cc.size(250,0),
+				scale = 0.28,
+	    	})
+		itemHeight = 20*msg:getLines()
+		if msg:getLines() == 1 then
+			msg:pos(55, 10):addTo(cell)
+	        display.newSprite("World_Tip.png"):pos(25,20):scale(0.7):addTo(cell)
+		else
+			msg:pos(55, itemHeight+7-20*msg:getLines()):addTo(cell)
+	        display.newSprite("World_Tip.png"):pos(25,itemHeight-5):scale(0.7):addTo(cell)
+		end
+	elseif data.channelType == "4" then -- 公会消息
+		local name = string.format("<{0,248,248}%s:>", data.name)
+		local msg = string.format(name.."%s", data.msg)
+		local msg = base.TalkLabel.new({
+	    		text  = msg,
+				size  = 18,
+				dimensions = cc.size(250,0),
+				scale = 0.28,
+	    	})
+		itemHeight = 20*msg:getLines()
+		if msg:getLines() == 1 then
+			msg:pos(55, 10):addTo(cell)
+	        display.newSprite("Union_Tip.png"):pos(25,20):scale(0.7):addTo(cell)
+		else
+			msg:pos(55, itemHeight+7-20*msg:getLines()):addTo(cell)
+	        display.newSprite("Union_Tip.png"):pos(25,itemHeight-5):scale(0.7):addTo(cell)
+		end
+	end
+	return cell,itemHeight
+end
+
+function ChatLeftView:insertChatNode()
+	if self.chatNode then
+		self.chatNode:removeFromParent(true)
+		self.chatNode = nil
+	end
+	if #self.showData > 0 then
+		local chatNode,height = self:createChatNode(self.showData[1])
+		self.chatNode = chatNode
+		self.height = height
+		self.posX = 0
+		self.posY = 95 - self.height
+	else
+		self.chatNode = createOutlineLabel({text = "暂无聊天消息",size = 18})
+		self.chatNode:setAnchorPoint(0,0)
+		self.height = 18
+		self.posX = 40
+		self.posY = 100 - self.height
+	end
+	self.chatNode:pos(self.posX,self.posY)
+	self.chatNode:addTo(self.back)
+end
+
+function ChatLeftView:updateData()
+	if #ChatData.allLeftData > 0 then
+		self.showData = {}
+		table.insert(self.showData,ChatData.allLeftData[1])
+	end
+end
+
+function ChatLeftView:updateView()
+	self:insertChatNode()
+end
+
+return ChatLeftView

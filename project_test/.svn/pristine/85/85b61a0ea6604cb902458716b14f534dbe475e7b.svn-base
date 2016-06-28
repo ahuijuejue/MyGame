@@ -1,0 +1,32 @@
+local OpenSmartActMainProcess = class("OpenSmartActMainProcess")
+
+function OpenSmartActMainProcess:ctor()
+	--请求消息号
+	self.order = 31001
+	--用户id
+	self.userid =  ""
+	--战队id
+	self.teamid =  ""
+	--uuid
+	self.uuid =  ""
+	--token值
+	self.token =  ""
+	--活动类型,1:老虎机;2:翻翻乐;3:七日充值;4:财神到;5:开服基金 
+	self.param1 =  ""	
+end
+
+
+function OpenSmartActMainProcess:serialization()
+	local data = {
+		order = self.order,
+		userid = self.userid,
+		teamid = self.teamid,
+		uuid = self.uuid,
+		token = self.token,
+		param1 = self.param1,
+		
+	}
+	return data
+end
+
+return OpenSmartActMainProcess

@@ -1,0 +1,117 @@
+local UnionCreateLayer = class("UnionCreateLayer",function ()
+	return display.newNode()
+end)
+
+local UnionIconListLayer = import(".UnionIconListLayer")
+local nameInput = "Union_Name.png"
+local iconInput = "Union_Icon.png"
+
+function UnionCreateLayer:ctor()
+    self:initData()
+    self:initView()
+end
+
+function UnionCreateLayer:initData()
+	self.unionName = ""
+	self.unionIcon = "union001.png"
+	self.unionCost = GameConfig.ConsortiaInfo["1"].Consortiaestablishcost
+end
+
+function UnionCreateLayer:initView()
+	 -- 公会名称
+	display.newTTFLabel({text = "公会名称:",color = CommonView.color_black(),size = 22}):pos(225,355):addTo(self)
+	self:initInputView()
+	display.newSprite("Union_Line.png"):pos(425,310):addTo(self)
+
+	-- 公会图标
+	display.newTTFLabel({text = "公会图标:",color = CommonView.color_black(),size = 22}):pos(225,260):addTo(self)
+	self.iconInput = display.newSprite(self.unionIcon):pos(375,260):addTo(self)
+
+	CommonButton.yellow("修改")
+	:onButtonClicked(function()
+		self.textName:setVisible(false)
+		self.listLayer = UnionIconListLayer.new()
+		self.listLayer.delegate = self
+		self.listLayer:pos(195,90)
+		self:addChild(self.listLayer)
+	end)
+	:pos(575,260):addTo(self)
+    display.newSprite("Union_Line.png"):pos(425,200):addTo(self)
+
+	-- 创建花费
+	display.newTTFLabel({text = "创建花费:",color = CommonView.color_black(),size = 22}):pos(225,160):addTo(self)
+	display.newSprite("Diamond60.png"):pos(350,160):scale(0.5):addTo(self)
+
+	base.Label.new({text = self.unionCost,color=CommonView.color_black(), size=22,border = false,shadow = 1})
+	:align(display.CENTER)
+	:addTo(self)
+	:pos(405, 160)
+
+	CommonButton.yellow("创建公会")
+	:onButtonClicked(function ( )
+		self:createUnion()
+	end)
+	:pos(575,160)
+	:addTo(self)
+end
+
+--控制输入框显示
+function UnionCreateLayer:setInputVisible(b)
+	self.textName:setVisible(b)
+end
+
+function UnionCreateLayer:removeIconListLayer()
+	self.textName:setVisible(true)
+	self.listLayer:removeFromParent(true)
+	self.listLayer = nil
+end
+
+function UnionCreateLayer:updateUnionIcon(index)
+	self.iconInput:setTexture(self.listLayer.data[index])
+end
+
+-- 输入公会名
+function UnionCreateLayer:initInputView()
+		-- 	-- 输入框监听
+	local function onEdit(event, editbox)
+	    if event == "began" then
+	    elseif event == "changed" then
+	        local _text = editbox:getText()
+			self.unionName = _text
+
+			local _trimed = string.trim(_text)
+			_trimed = parseString(_trimed, 12, 2)
+			if _trimed ~= _text then
+			    editbox:setText(_trimed)
+			end
+
+	    elseif event == "ended" then
+	        -- 输入结束
+	    elseif event == "return" then
+	        -- 从输入框返回
+	    end
+	end
+
+	local textBack = display.newScale9Sprite(nameInput)
+	-- textBack:setOpacity(100)
+	self.textName = cc.ui.UIInput.new({
+	    UIInputType = 1,
+	    image = textBack,
+	    size = cc.size(250, 35),
+	   	x = 80,
+	    y = 80,
+	    listener = onEdit,
+	}):addTo(self,0)
+	:pos(445,360)
+	:align(display.CENTER)
+	self.textName:setPlaceHolder("在此输入公会名")
+	self.textName:setMaxLength(10)
+
+end
+
+function UnionCreateLayer:createUnion()
+	print("创建公会")
+	-- 发送创建请求   self.unionName   self.unionIcon  self.unionCost
+end
+
+return UnionCreateLayer

@@ -1,0 +1,47 @@
+local CostNode = class("CostNode",function ()
+	return display.newNode()
+end)
+
+function CostNode:ctor(param1,param2,image)
+	self.button = createButtonWithLabel(param1,param2)
+	self:addChild(self.button)
+
+	self:createCost(image)
+end
+
+function CostNode:createCost(image)
+	self.icon = display.newSprite(image)
+	self.icon:setScale(0.7)
+	self.button:addChild(self.icon)
+
+	self.costLabel = createOutlineLabel({text = "",size = 24})
+	self.costLabel:setPosition(40,19)
+	self.costLabel:setAnchorPoint(0,0.5)
+	self.icon:addChild(self.costLabel)
+end
+
+function CostNode:setTag(tag)
+	self.button:setTag(tag)
+end
+
+function CostNode:onButtonClicked(callback)
+	self.button:onButtonClicked(callback)
+end
+
+function CostNode:setButtonLabelString(string)
+	self.button:setButtonLabelString(string)
+end
+
+function CostNode:setButtonEnabled(enabled)
+	self.button:setButtonEnabled(enabled)
+end
+
+function CostNode:setString(string)
+	self.costLabel:setString(string)
+end
+
+function CostNode:setColor(color)
+	self.costLabel:setColor(color)
+end
+
+return CostNode

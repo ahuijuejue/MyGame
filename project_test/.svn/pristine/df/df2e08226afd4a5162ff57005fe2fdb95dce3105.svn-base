@@ -1,0 +1,197 @@
+--[[
+	翻翻乐活动
+]]
+local FlipFunLayer = class("FlipFunLayer",function()
+	return display.newNode()
+end)
+local NodeBox = import("app.ui.NodeBox")
+
+local boardImage  = "board_flip.png"
+local payBtn1 = "flip_pay1.png"
+local payBtn2 = "flip_pay2.png"
+local refreshBtn1 = "flip_btn1.png"
+local refreshBtn2 = "flip_btn2.png"
+local flipDiamond = "flip_diamond.png"
+local flipFace = "flip_face.png"
+local flipBack = "flip_back.png"
+
+function FlipFunLayer:ctor()
+	self:initData()
+	self:initView()
+	self:addNodeEventListener(cc.NODE_EVENT,function (event)
+		if event.name == "enter" then
+			self:onEnter()
+		elseif event.name == "exit" then
+			self:onExit()
+		end
+	end)
+
+	self.slider_ = UserData:slider("Idolum_Exp.png")  --进度条TODO
+    :addTo(self.board)
+    :pos(560, 410)
+    :align(display.LEFT_CENTER)
+    self.slider_:setScaleX(0.5)
+    UserData:setSliderPer(self.slider_, 1)
+end
+
+function FlipFunLayer:initData()
+	self.allFlipPic = {}
+	for i=1,10 do
+		self.flipPic = cc.ui.UIPushButton.new({normal = flipBack}, options)		
+		table.insert(self.allFlipPic, self.flipPic)
+
+		self.flipPic:onButtonClicked(function ()
+			-- print("点击i.."..i)
+			self:touchFlip(i)
+		end)
+
+	end
+end
+
+function FlipFunLayer:touchFlip(index)
+	local x,y = self.allFlipPic[index]:getPosition()
+	self.allFlipPic[index]:hide()
+	--创建动画
+	self.flipAnimation = display.newSprite(flipFace)
+	:addTo(self.board)
+	:pos(x+660,y+255)
+	:zorder(10)
+	self.flipAnimation:show()
+	self.flipAnimation:setScaleX(-1)
+	transition.execute(self.flipAnimation,
+		transition.scaleTo(self.flipAnimation,{scale = 1, time = 0.2}),
+		{onComplete = function ()
+		self:showItemsView(index)
+		end})
+
+	-- self.allFlipPic[index]:setButtonImage("normal", flipFace, ignoreEmpty)
+end
+
+--显示商品
+function FlipFunLayer:showItemsView(index)
+    -- self.layer1:removeAllChildren()
+    	local x,y = self.allFlipPic[index]:getPosition()
+        self:showItem(tostring(index), 1000)
+        :addTo(self.board)
+        :pos(x+660,y+255)
+        :zorder(10) 
+
+    -- self:updateBuyBtn(index)    --TODO
+end
+
+function FlipFunLayer:initView()
+	-- 灰色背景
+	CommonView.blackLayer2()
+	:addTo(self)
+	--背景板
+	self.board = display.newSprite(boardImage)
+	:addTo(self)
+	:pos(display.cx-40,display.cy+20)
+	--关闭
+	self.closeBtn = CommonButton.close():addTo(self.board):pos(935,525)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close()
+		self:removeFromParent()
+	end)
+	--添加时间控件
+	self:addTimeWidget()
+	--初始化NodeBox
+	self:initNodeBox()
+	--充值按钮
+	cc.ui.UIPushButton.new({normal = payBtn1,pressed = payBtn2}, options)
+	:pos(660,33)
+	:addTo(self.board)
+	:onButtonClicked(function ()
+		print("点击充值")
+	end)
+	--刷新按钮
+	self.refreshBtn = CommonButton.button({normal = refreshBtn1,pressed = refreshBtn2},"",{text = "刷新:".."100".."   ",size = 26})
+	:addTo(self.board)
+	:pos(500,33)
+	:onButtonClicked(function ()
+		print("点击刷新")
+		-- self.nodeBox:cleanElement()
+		-- self:initNodeBox()
+	end)
+	display.newSprite(flipDiamond)
+	:addTo(self.refreshBtn)
+	:pos(60,0)
+	--自动翻牌按钮
+	CommonButton.button({normal = refreshBtn1,pressed = refreshBtn2},"",{text = "自动翻牌:".."0".."  ",size = 26})
+	:addTo(self.board)
+	:pos(820,33)
+	:onButtonClicked(function ()
+		print("点击自动翻牌")
+	end)
+
+end
+
+function FlipFunLayer:initNodeBox()
+	self.nodeBox =  NodeBox.new()
+	self.nodeBox:setCellSize(cc.size(89,125))
+	self.nodeBox:setPosition(660,255)
+	self.board:addChild(self.nodeBox,10)
+	-- self.nodeBox:cleanElement()
+	self.nodeBox:setSpace(15,15)
+	self.nodeBox:setUnit(5)
+	self.nodeBox:addElement(self.allFlipPic)
+end
+
+--时间控件
+function FlipFunLayer:addTimeWidget()
+	self.sprite = display.newSprite()
+    :align(display.CENTER)
+    :addTo(self.board)
+    :pos(735, 470)
+
+    self.timeLabel = base.Label.new({text="", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(805, 450)
+
+    self:schedule(function()
+        self:updateTimeShow()
+    end, 0.2)
+end
+
+-- 更新时间显示
+function FlipFunLayer:updateTimeShow()
+    local date = ActivityOpenData:getRemainingDate()
+
+    local timestring = string.format("%02d:%02d:%02d", date.hour, date.min, date.sec)
+
+    if date.day < 8 then
+        self.sprite:setTexture(string.format("font5_%d.png", date.day))
+    end
+    self.timeLabel:setString(timestring)
+
+    self.date = date
+end
+
+--显示商品列表
+function FlipFunLayer:showItem(itemId, count)
+    local grid = UserData:createItemView(itemId, {scale=0.7})
+
+    local label = base.Label.new({
+        text = tostring(count),
+        size = 18,
+        color = CommonView.color_white(),
+    })
+    :align(display.BOTTOM_RIGHT)
+    :pos(50, -50)
+
+    grid:addItem(label)
+
+    return grid
+end
+
+
+function FlipFunLayer:onExit()
+	
+end
+
+function FlipFunLayer:onEnter()
+	CommonView.animation_show_out(self.board)
+end
+
+return FlipFunLayer

@@ -1,0 +1,7 @@
+if LOAD_UPDATE then 
+	local UpdateScene = require("update.UpdateScene")
+	local scene = UpdateScene.new()
+	display.replaceScene(scene)
+else 
+	app:enterToScene("StartScene")
+end

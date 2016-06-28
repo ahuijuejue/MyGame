@@ -1,0 +1,17 @@
+local AppointUnionResponse = class("AppointUnionResponse")
+function AppointUnionResponse:AppointUnionResponse(data)
+
+
+end
+function AppointUnionResponse:ctor()
+	--响应消息号
+	self.order = 30016
+	--返回结果,1:成功退出 ，2:不是管理员，3:级别不够
+	self.result =  ""
+	--公会名称
+	self.param1 =  ""
+	--公会图标
+	self.param2 =  ""	
+end
+
+return AppointUnionResponse

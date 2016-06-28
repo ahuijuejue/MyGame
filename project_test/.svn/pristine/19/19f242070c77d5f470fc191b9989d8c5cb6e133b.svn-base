@@ -1,0 +1,24 @@
+--[[
+进入世界树商店
+]]
+
+local ShopBaseVisitor = import(".ShopBaseVisitor")
+local ShopTreeVisitor = class("ShopTreeVisitor", ShopBaseVisitor)
+
+function ShopTreeVisitor:getNetOrder()
+	return "OpenShopTree"
+end 
+
+function ShopTreeVisitor:getShopSceneName()
+	return "ShopTreeScene"
+end 
+
+function ShopTreeVisitor:getShopType()
+	return 3
+end 
+
+function ShopTreeVisitor:isShopOpen()
+	return UserData:getUserLevel() >= OpenLvData.tree.openLv
+end 
+
+return ShopTreeVisitor

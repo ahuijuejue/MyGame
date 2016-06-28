@@ -1,0 +1,51 @@
+local UnionSetLayer = class("UnionSetLayer",function ()
+	return display.newColorLayer(cc.c4b(0, 0, 0, 200))
+end)
+
+local BgImg = "Union_Mail_Bg.png"
+local applyTitle = "union_set.png"
+
+function UnionSetLayer:ctor()
+
+	self.spriteBg = display.newSprite(BgImg):pos(display.cx-5,display.cy-20):addTo(self)
+	display.newSprite(applyTitle):pos(380, 425):addTo(self.spriteBg)
+
+	-- 关闭按钮
+	-- CommonButton.close()
+	-- :addTo(self.spriteBg,3)
+	-- :pos(750, 445)
+	-- :scale(0.8)
+	-- :onButtonClicked(function()
+	-- 	CommonSound.close() -- 音效
+	-- 	self.delegate:removeUnionSetLayer()
+	-- end)
+
+    local posX = -50
+	local label1 = display.newTTFLabel({text = "设置入会申请等级",color = cc.c3b(254, 231, 93), size = 24})
+    label1:pos(posX+label1:getContentSize().width,350):addTo(self.spriteBg)
+
+    local label2 = display.newTTFLabel({text = "设置跳过入会申请",color = cc.c3b(254, 231, 93), size = 24})
+    label2:pos(posX+label2:getContentSize().width,250):addTo(self.spriteBg)
+
+    local label3 = display.newTTFLabel({text = "（设置后所有玩家申请入会后自动入会）",color = CommonView.color_red() , size = 20})
+    label3:pos(posX+label3:getContentSize().width-85,210):addTo(self.spriteBg)
+
+    CommonButton.yellow("取消", {color = cc.c3b(252, 242, 181)})
+    :onButtonClicked(function ()
+    	self.delegate:removeUnionSetLayer()
+		print("取消")
+	end)
+	:addTo(self.spriteBg)
+	:pos(185, 65)
+
+	CommonButton.yellow("确定", {color = cc.c3b(252, 242, 181)})
+    :onButtonClicked(function ()
+		print("确定")
+	end)
+	:pos(585,65)
+	:addTo(self.spriteBg)
+
+
+end
+
+return UnionSetLayer

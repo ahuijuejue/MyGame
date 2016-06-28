@@ -1,0 +1,15 @@
+local DecomposeResponse = class("DecomposeResponse")
+function DecomposeResponse:DecomposeResponse(data)
+
+
+end
+function DecomposeResponse:ctor()
+	--响应消息号
+	self.order = 20038
+	--返回结果,1:成功 
+	self.result =  ""
+	--分解的物品,itemid_itemnum,itemid_itemnum
+	self.param1 =  ""	
+end
+
+return DecomposeResponse

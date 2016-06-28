@@ -1,0 +1,409 @@
+local Hero_equip_up = 
+{
+	["1"] = 
+	{
+		["GearItemID1"] = {
+			[[12101]],
+			[[30001]],
+			[[12102]]
+		},
+		["GearItemID1_gold"] = {
+			[[1]]
+		},
+		["GearItemID2"] = {
+			[[12101]],
+			[[30005]],
+			[[12102]]
+		},
+		["GearItemID2_gold"] = {
+			[[1]]
+		},
+		["GearItemID3"] = {
+			[[12101]],
+			[[30002]],
+			[[12102]]
+		},
+		["GearItemID3_gold"] = {
+			[[1]]
+		},
+		["GearItemID4"] = {
+			[[12101]],
+			[[30006]],
+			[[12102]]
+		},
+		["GearItemID4_gold"] = {
+			[[1]]
+		},
+		["GearItemID5"] = {
+			[[12101]],
+			[[30010]],
+			[[12102]]
+		},
+		["GearItemID5_gold"] = {
+			[[1]]
+		},
+		["GearItemID6"] = {
+			[[12101]],
+			[[30009]],
+			[[12102]]
+		},
+		["GearItemID6_gold"] = {
+			[[1]]
+		},
+		["GearItemNum1"] = {
+			2,
+			2,
+			10
+		},
+		["GearItemNum2"] = {
+			1,
+			1,
+			5
+		},
+		["GearItemNum3"] = {
+			1,
+			1,
+			5
+		},
+		["GearItemNum4"] = {
+			1,
+			1,
+			5
+		},
+		["GearItemNum5"] = {
+			1,
+			1,
+			5
+		},
+		["GearItemNum6"] = {
+			1,
+			1,
+			5
+		}
+	},
+	["2"] = 
+	{
+		["GearItemID1"] = {
+			[[12101]],
+			[[30005]],
+			[[12102]]
+		},
+		["GearItemID1_gold"] = {
+			[[1]]
+		},
+		["GearItemID2"] = {
+			[[12101]],
+			[[30002]],
+			[[12102]]
+		},
+		["GearItemID2_gold"] = {
+			[[1]]
+		},
+		["GearItemID3"] = {
+			[[12101]],
+			[[30006]],
+			[[12102]]
+		},
+		["GearItemID3_gold"] = {
+			[[1]]
+		},
+		["GearItemID4"] = {
+			[[12101]],
+			[[30010]],
+			[[12102]]
+		},
+		["GearItemID4_gold"] = {
+			[[1]]
+		},
+		["GearItemID5"] = {
+			[[12101]],
+			[[30009]],
+			[[12102]]
+		},
+		["GearItemID5_gold"] = {
+			[[1]]
+		},
+		["GearItemID6"] = {
+			[[12101]],
+			[[30001]],
+			[[12102]]
+		},
+		["GearItemID6_gold"] = {
+			[[1]]
+		},
+		["GearItemNum1"] = {
+			4,
+			4,
+			20
+		},
+		["GearItemNum2"] = {
+			2,
+			2,
+			10
+		},
+		["GearItemNum3"] = {
+			2,
+			2,
+			10
+		},
+		["GearItemNum4"] = {
+			2,
+			2,
+			10
+		},
+		["GearItemNum5"] = {
+			2,
+			2,
+			10
+		},
+		["GearItemNum6"] = {
+			2,
+			2,
+			10
+		}
+	},
+	["3"] = 
+	{
+		["GearItemID1"] = {
+			[[12101]],
+			[[30002]],
+			[[12102]]
+		},
+		["GearItemID1_gold"] = {
+			[[1]]
+		},
+		["GearItemID2"] = {
+			[[12101]],
+			[[30006]],
+			[[12102]]
+		},
+		["GearItemID2_gold"] = {
+			[[1]]
+		},
+		["GearItemID3"] = {
+			[[12101]],
+			[[30010]],
+			[[12102]]
+		},
+		["GearItemID3_gold"] = {
+			[[1]]
+		},
+		["GearItemID4"] = {
+			[[12101]],
+			[[30009]],
+			[[12102]]
+		},
+		["GearItemID4_gold"] = {
+			[[1]]
+		},
+		["GearItemID5"] = {
+			[[12101]],
+			[[30001]],
+			[[12102]]
+		},
+		["GearItemID5_gold"] = {
+			[[1]]
+		},
+		["GearItemID6"] = {
+			[[12101]],
+			[[30005]],
+			[[12102]]
+		},
+		["GearItemID6_gold"] = {
+			[[1]]
+		},
+		["GearItemNum1"] = {
+			8,
+			8,
+			40
+		},
+		["GearItemNum2"] = {
+			4,
+			4,
+			20
+		},
+		["GearItemNum3"] = {
+			4,
+			4,
+			20
+		},
+		["GearItemNum4"] = {
+			4,
+			4,
+			20
+		},
+		["GearItemNum5"] = {
+			4,
+			4,
+			20
+		},
+		["GearItemNum6"] = {
+			4,
+			4,
+			20
+		}
+	},
+	["4"] = 
+	{
+		["GearItemID1"] = {
+			[[12101]],
+			[[30006]],
+			[[12102]]
+		},
+		["GearItemID1_gold"] = {
+			[[1]]
+		},
+		["GearItemID2"] = {
+			[[12101]],
+			[[30010]],
+			[[12102]]
+		},
+		["GearItemID2_gold"] = {
+			[[1]]
+		},
+		["GearItemID3"] = {
+			[[12101]],
+			[[30009]],
+			[[12102]]
+		},
+		["GearItemID3_gold"] = {
+			[[1]]
+		},
+		["GearItemID4"] = {
+			[[12101]],
+			[[30001]],
+			[[12102]]
+		},
+		["GearItemID4_gold"] = {
+			[[1]]
+		},
+		["GearItemID5"] = {
+			[[12101]],
+			[[30005]],
+			[[12102]]
+		},
+		["GearItemID5_gold"] = {
+			[[1]]
+		},
+		["GearItemID6"] = {
+			[[12101]],
+			[[30002]],
+			[[12102]]
+		},
+		["GearItemID6_gold"] = {
+			[[1]]
+		},
+		["GearItemNum1"] = {
+			16,
+			16,
+			80
+		},
+		["GearItemNum2"] = {
+			8,
+			8,
+			40
+		},
+		["GearItemNum3"] = {
+			8,
+			8,
+			40
+		},
+		["GearItemNum4"] = {
+			8,
+			8,
+			40
+		},
+		["GearItemNum5"] = {
+			8,
+			8,
+			40
+		},
+		["GearItemNum6"] = {
+			8,
+			8,
+			40
+		}
+	},
+	["5"] = 
+	{
+		["GearItemID1"] = {
+			[[12101]],
+			[[30010]],
+			[[12102]]
+		},
+		["GearItemID1_gold"] = {
+			[[1]]
+		},
+		["GearItemID2"] = {
+			[[12101]],
+			[[30009]],
+			[[12102]]
+		},
+		["GearItemID2_gold"] = {
+			[[1]]
+		},
+		["GearItemID3"] = {
+			[[12101]],
+			[[30001]],
+			[[12102]]
+		},
+		["GearItemID3_gold"] = {
+			[[1]]
+		},
+		["GearItemID4"] = {
+			[[12101]],
+			[[30005]],
+			[[12102]]
+		},
+		["GearItemID4_gold"] = {
+			[[1]]
+		},
+		["GearItemID5"] = {
+			[[12101]],
+			[[30002]],
+			[[12102]]
+		},
+		["GearItemID5_gold"] = {
+			[[1]]
+		},
+		["GearItemID6"] = {
+			[[12101]],
+			[[30006]],
+			[[12102]]
+		},
+		["GearItemID6_gold"] = {
+			[[1]]
+		},
+		["GearItemNum1"] = {
+			32,
+			32,
+			160
+		},
+		["GearItemNum2"] = {
+			16,
+			16,
+			80
+		},
+		["GearItemNum3"] = {
+			16,
+			16,
+			80
+		},
+		["GearItemNum4"] = {
+			16,
+			16,
+			80
+		},
+		["GearItemNum5"] = {
+			16,
+			16,
+			80
+		},
+		["GearItemNum6"] = {
+			16,
+			16,
+			80
+		}
+	}
+}
+return Hero_equip_up

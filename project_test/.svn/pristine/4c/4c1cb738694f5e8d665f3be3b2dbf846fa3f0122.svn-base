@@ -1,0 +1,30 @@
+local UnionModel = class("UnionModel")
+
+function UnionModel:ctor()
+	--工会名
+	self.name = ""
+	--工会id
+	self.id = ""
+	--工会介绍
+	self.info = ""
+	--工会经验
+	self.exp = ""
+	--工会icon
+	self.icon = ""
+	--工会成员
+	self.memberList = {}
+	--工会申请成员
+	self.applyList = {}
+end
+
+function UnionModel:unionMembe(param)
+	local member = {
+		id = "",
+		level = "",
+		name = "",
+		position = "",
+	}
+	return member
+end
+
+return UnionModel

@@ -1,0 +1,23 @@
+local SendMercenaryResponse = class("SendMercenaryResponse")
+function SendMercenaryResponse:SendMercenaryResponse(data)
+    if data.result == 1 then
+    	for i,v in ipairs(UnionListData.heroList_) do
+            if v.roleId == data.param1 then
+                UnionListData:insertAllAgentData( v )  -- 增加全部雇佣兵
+                UnionListData:insertOwnAgentData( v )  -- 增加我的雇佣兵
+                break
+            end
+        end
+    	UnionListData:setAgentTime( data.param1 , data.param2)  -- 英雄id 时间戳
+    	UnionListData:setAgentTimes(data.param1 , 0)    -- 英雄id 雇佣次数
+    	GameDispatcher:dispatchEvent({name = EVENT_CONSTANT.NET_CALLBACK,data = data})
+    end
+end
+function SendMercenaryResponse:ctor()
+	--返回结果,1:成功，其他:非法数据
+	self.result =  ""
+	--英雄id
+	self.param1 =  ""
+end
+
+return SendMercenaryResponse

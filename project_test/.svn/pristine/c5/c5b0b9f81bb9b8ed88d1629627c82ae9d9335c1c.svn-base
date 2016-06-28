@@ -1,0 +1,75 @@
+local UnionIconListLayer = class("UnionIconListLayer",function ()
+	return display.newNode()
+end)
+local backBoard = "Union_List.png"
+
+function UnionIconListLayer:ctor()
+    self:initData()
+	self:initView()
+end
+
+function UnionIconListLayer:initData()
+	self.data = {}
+	local num = table.nums(GameConfig.union_icon)
+	for i=1,num do
+		local iconItem = self:createItem(i)
+		table.insert(self.data,iconItem)
+	end
+end
+
+function UnionIconListLayer:createItem(index)
+	local cfg = GameConfig.union_icon[tostring(index)].union_image
+	return cfg
+end
+
+function UnionIconListLayer:initView()
+	CommonView.blackLayer2()
+	:addTo(self)
+	:pos(-280,-90)
+
+	local listBoard = display.newSprite(backBoard):pos(210,200):addTo(self)
+
+	-- 关闭按钮
+	CommonButton.close()
+	:addTo(listBoard,3)
+	:pos(620, 390)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close() -- 音效
+		self.delegate:removeIconListLayer()
+	end)
+
+
+	self.iconListView = base.ListView.new({
+		viewRect = cc.rect(0, 0, 631, 385),
+		itemSize = cc.size(84, 84),
+	}):addTo(listBoard)
+	:pos(0, 5)
+
+	for i=1,math.ceil(#self.data/5) do
+		local item = self.iconListView:newItem()
+		local content  = display.newNode()
+		for count = 1, 5 do
+			local idx  = (i-1)*5 + count
+			cc.ui.UIPushButton.new(self.data[idx])
+		    :setButtonSize(84, 84)
+		    :onButtonClicked(function (event)
+		    	self.delegate:updateUnionIcon(idx)
+		    	self.delegate:removeIconListLayer()
+		    end)
+		    :align(display.CENTER, 110*count-55, 40)
+		    :addTo(content)
+		    :setTouchSwallowEnabled(tru)
+		end
+		content:setContentSize(560,84)
+		item:addContent(content)
+		item:setItemSize(631,95)
+
+		self.iconListView:addItem(item)
+
+	end
+	self.iconListView:reload()
+
+end
+
+return UnionIconListLayer

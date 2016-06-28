@@ -1,0 +1,60 @@
+local UnionJoinLayer = class("UnionJoinLayer",function ()
+	return display.newNode()
+end)
+
+local listImage = "union_list_bg.png"
+local barImage = "union_bar.png"
+
+function UnionJoinLayer:ctor()
+	self:createListView()
+end
+
+function UnionJoinLayer:createListView()
+	self.listView = cc.TableView:create(cc.size(660,335))
+	self.listView:setPosition(30,23)
+	self.listView:setDirection(cc.SCROLLVIEW_DIRECTION_VERTICAL)
+	self.listView:setVerticalFillOrder(cc.TABLEVIEW_FILL_TOPDOWN)
+    self.listView:setDelegate()
+
+    self.listView:registerScriptHandler(handler(self, self.scrollViewDidScroll), 0)
+    self.listView:registerScriptHandler(handler(self, self.tableCellTouched), cc.TABLECELL_TOUCHED)
+	self.listView:registerScriptHandler(handler(self, self.cellSizeForTable), cc.TABLECELL_SIZE_FOR_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.tableCellAtIndex), cc.TABLECELL_SIZE_AT_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.numberOfCellsInTableView), cc.NUMBER_OF_CELLS_IN_TABLEVIEW)
+    self.listView:reloadData()
+
+	self:addChild(self.listView)
+end
+
+function UnionJoinLayer:scrollViewDidScroll(table)
+	
+end
+
+function UnionJoinLayer:tableCellTouched(table,cell)
+	print("cellIdx:"..cell:getIdx())
+end
+
+function UnionJoinLayer:cellSizeForTable(table,idx)
+	return 100
+end
+
+function UnionJoinLayer:tableCellAtIndex(table,idx)
+	return self:createCell(idx)
+end
+
+function UnionJoinLayer:numberOfCellsInTableView(table)
+	return 5
+end
+
+function UnionJoinLayer:createCell(idx)
+	local cell = cc.TableViewCell:new()
+	cell:setIdx(idx)
+
+    local bgSprite = display.newSprite(listImage)
+    bgSprite:setAnchorPoint(0,0)
+    cell:addChild(bgSprite)
+
+    return cell
+end
+
+return UnionJoinLayer

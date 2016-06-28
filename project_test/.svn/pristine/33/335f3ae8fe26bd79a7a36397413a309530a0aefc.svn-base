@@ -1,0 +1,1528 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"for",
+				"for	for i=1,10"
+			],
+			[
+				"ig",
+				"ignoreAnchorPointForPosition(ignore)	Node"
+			],
+			[
+				"disp",
+				"display.cy	."
+			],
+			[
+				"asset",
+				"assert(v[,message])"
+			],
+			[
+				"check",
+				"checkint(value)	."
+			],
+			[
+				"re",
+				"reset()	GLProgram"
+			],
+			[
+				"dis",
+				"display.cx	."
+			],
+			[
+				"rel",
+				"release()	Ref"
+			],
+			[
+				"display",
+				"display.cy	."
+			],
+			[
+				"getscal",
+				"getScaleX()	Node"
+			],
+			[
+				"setsca",
+				"setScaleX(scaleX)	Node"
+			],
+			[
+				"load",
+				"loadData()	GameData"
+			],
+			[
+				"Memberbu",
+				"MemberButtonGroup	."
+			],
+			[
+				"MemberButt",
+				"MemberButtonGroup	."
+			],
+			[
+				"mem",
+				"memberId	."
+			],
+			[
+				"doDe",
+				"doDamage(attacker, damage, isCrit, isChangeState)	RoleNode"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"getPos",
+				"getPositionY()	UIStretch"
+			],
+			[
+				"wor",
+				"wordPowerup	."
+			],
+			[
+				"rect",
+				"rect()	MenuItem"
+			],
+			[
+				"rol",
+				"roles	."
+			],
+			[
+				"removech",
+				"removeAllChildren()	Node"
+			],
+			[
+				"getposi",
+				"getPositionX()	UILayout"
+			],
+			[
+				"resetp",
+				"resetProperty()	CharacterModel"
+			],
+			[
+				"pau",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"Scal",
+				"ScaleTo	."
+			],
+			[
+				"setPer",
+				"setPercentage(percentage)	ProgressTimer"
+			],
+			[
+				"onLeader",
+				"onLeaderUpdateAnger(role, anger, maxAnger)	BattleHubLayer"
+			],
+			[
+				"setan",
+				"setAnchorPoint(ap)	UILayout"
+			],
+			[
+				"setz",
+				"setGlobalZOrder(globalZOrder)	Node"
+			],
+			[
+				"setAni",
+				"setAnchorPoint(ap)	UILayout"
+			],
+			[
+				"dist",
+				"display.c_top	."
+			],
+			[
+				"buffNode",
+				"buffNodeBottom"
+			],
+			[
+				"leaderB",
+				"leaderBar"
+			],
+			[
+				"eve",
+				"evolveNode	."
+			],
+			[
+				"resu",
+				"resumeAll()	RoleNode"
+			],
+			[
+				"print",
+				"print(···)"
+			],
+			[
+				"onev",
+				"onEvolutionEFFECTEnd(event)	BattleScene"
+			],
+			[
+				"onevolution",
+				"onEvolutionEffectEnd(event)	BattleScene"
+			],
+			[
+				"oneev",
+				"onEvolutionBegin(event)	BattleScene"
+			],
+			[
+				"fun",
+				"function	."
+			],
+			[
+				"pa",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"format",
+				"string.format(formatstring,···)"
+			],
+			[
+				"removeCh",
+				"removeChildByTag(tag, cleanup)	Node"
+			],
+			[
+				"buff",
+				"bufftype	."
+			],
+			[
+				"getChil",
+				"getChildByTag(tag)	Node"
+			],
+			[
+				"forma",
+				"string.format(formatstring,···)"
+			],
+			[
+				"addBuff",
+				"addBuff(buffId, level, attacker)	BuffManager"
+			],
+			[
+				"pausea",
+				"pauseAllRunningActions()	ActionManager"
+			],
+			[
+				"scale",
+				"scaleTo(time, scale)	Node"
+			],
+			[
+				"Repeat",
+				"Repeat:create(action, times)	."
+			],
+			[
+				"Skillbu",
+				"SkillButton	."
+			],
+			[
+				"h",
+				"height	."
+			],
+			[
+				"Dodge",
+				"DodgeDeBuff	."
+			],
+			[
+				"Def",
+				"DefenseDeBuff	."
+			],
+			[
+				"doRev",
+				"doRecover(hp)	RoleNode"
+			],
+			[
+				"Buff",
+				"BuffBase	."
+			],
+			[
+				"BUFF",
+				"BuffManager	."
+			],
+			[
+				"pauseA",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"paus",
+				"pause()	Node"
+			],
+			[
+				"pause",
+				"pause()	Node"
+			],
+			[
+				"addevent",
+				"addEventListener(eventName, listener, tag)	EventProtocol"
+			],
+			[
+				"skill",
+				"self.skillId	."
+			],
+			[
+				"setContentsize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"new",
+				"new(...)"
+			],
+			[
+				"Skillbutton",
+				"SkillButtonGroup	."
+			],
+			[
+				"SkillBut",
+				"SkillButtonGroup	."
+			],
+			[
+				"find",
+				"findRolesInSkillRange(skillId)	RoleNode"
+			],
+			[
+				"getSkillby",
+				"getSkillById(skillId)	SkillManager"
+			],
+			[
+				"attack",
+				"attackEffectNum	."
+			],
+			[
+				"getSkill",
+				"getSkillById(skillId)	SkillManager"
+			],
+			[
+				"releaseski",
+				"releaseSkillById(skill)	SkillManager"
+			],
+			[
+				"attackeff",
+				"attackEffectNum	."
+			],
+			[
+				"stopAllSt",
+				"stopAllActions()	Node"
+			],
+			[
+				"De",
+				"DelayTime	."
+			],
+			[
+				"Fead",
+				"FadeOut:create(d)	."
+			],
+			[
+				"getContent",
+				"getContentSize()	Node"
+			],
+			[
+				"setVi",
+				"setVisible(visible)	Mesh"
+			],
+			[
+				"setContentSize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"cov",
+				"convertToWorldSpace(nodePoint)	Node"
+			],
+			[
+				"setContenSize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"displ",
+				"display.cx	."
+			],
+			[
+				"size",
+				"size(width, height)	Node"
+			],
+			[
+				"abs",
+				"math.abs(x)"
+			],
+			[
+				"function",
+				"function	function"
+			],
+			[
+				"getposition",
+				"getPositionX()	Node"
+			],
+			[
+				"setFlip",
+				"setFlippedX(flippedX)	Sprite"
+			],
+			[
+				"attacke",
+				"attackEffectNum	."
+			],
+			[
+				"getEne",
+				"getEnemiesTotalByWave(wave)	BattleLogic"
+			],
+			[
+				"waveE",
+				"waveEnemies"
+			],
+			[
+				"Batt",
+				"BattleCustom	."
+			],
+			[
+				"anim",
+				"animation	."
+			],
+			[
+				"addSprite",
+				"addSpriteFrameWithFile(filename)	Animation"
+			],
+			[
+				"Anim",
+				"Animation	."
+			],
+			[
+				"setMi",
+				"setMidpoint(point)	ProgressTimer"
+			],
+			[
+				"setpre",
+				"setPercentage(percentage)	ProgressTimer"
+			],
+			[
+				"printf",
+				"printInfo(fmt, ...)	."
+			],
+			[
+				"math",
+				"math.newrandomseed()	."
+			],
+			[
+				"getNode",
+				"getNodeRect()	RoleNode"
+			],
+			[
+				"Ene",
+				"EnemyNode	."
+			],
+			[
+				"di",
+				"display.width	."
+			],
+			[
+				"setPosio",
+				"setPosition(position)	Twirl"
+			],
+			[
+				"max",
+				"math.max(x,···)"
+			],
+			[
+				"setp",
+				"setPosition(position)	Twirl"
+			],
+			[
+				"setAn",
+				"setAnchorPoint(ap)	UIStretch"
+			],
+			[
+				"state",
+				"self.stateMgr	."
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"playDa",
+				"playDamage1()	RoleNode"
+			],
+			[
+				"getpos",
+				"getPosition()	UIStretch"
+			],
+			[
+				"getPosion",
+				"getPosition()	UIStretch"
+			],
+			[
+				"findR",
+				"findRolesInAttackRange()	RoleNode"
+			],
+			[
+				"play",
+				"playAttack()	RoleNode"
+			],
+			[
+				"fin",
+				"findRolesInViewRange()	RoleNode"
+			],
+			[
+				"Ch",
+				"CharacterState	."
+			],
+			[
+				"change",
+				"changeState_(event)	StateMachine"
+			],
+			[
+				"State",
+				"StateManager	."
+			],
+			[
+				"Game",
+				"GameNode	."
+			],
+			[
+				"getFrame",
+				"getFrameSize()	GLView"
+			],
+			[
+				"setpr",
+				"setProperties(properties)	TMXLayer"
+			],
+			[
+				"Characte",
+				"CharacterModel	."
+			],
+			[
+				"json",
+				"json.decode(text)	."
+			],
+			[
+				"lo",
+				"loadstring(string[,chunkname])"
+			],
+			[
+				"clan",
+				"clang_args"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"PA",
+				"padding-left"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"in",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: function"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())  "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/zhangsp/Documents/CocosProjects/hehehero/src/main.lua",
+		"/Users/zhangsp/Documents/CocosProjects/HaHaHero/src/app/MyApp.lua",
+		"/Users/zhangsp/SourceCode/foursquared/captures/api/v1/checkin.xml",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Model/User/ProjectModel.php",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Third/WeiyouxiClient.php",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Controller/ReminderController.php",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Core/BaseController.php",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Core/GameException.php",
+		"/Users/zhangsp/SourceCode/tomatogtd/2/Core/Common.php",
+		"/Users/zhangsp/Documents/CocosProjects/HaHaHero/HaHaHero",
+		"/Users/zhangsp/Documents/CocosProjects/HaHaHero/frameworks/runtime-src/proj.android_no_anysdk/jni/Android.mk",
+		"/Users/zhangsp/Documents/CocosProjects/HaHaHero/frameworks/runtime-src/proj.android/jni/Android.mk",
+		"/Users/zhangsp/Documents/CocosProjects/HaHaHero/frameworks/runtime-src/proj.android/project.properties",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/src/main.lua",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/frameworks/runtime-src/proj.android/build_native_release.sh",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/frameworks/runtime-src/proj.android/build_native.sh",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/frameworks/runtime-src/proj.android/build.xml",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/frameworks/cocos2d-x/cocos/Android.mk",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/main.lua",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/lib/lua_bindings/manual/CCLuaEngine.cpp",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/MyApp.lua",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/src/cocos/cocos2d/Cocos2d.lua",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/src/cocos/cocostudio/CocoStudio.lua",
+		"/Users/zhangsp/Documents/CocosProjects/hahahero/hahahero/src/cocos/controller/ControllerConstants.lua",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/lib/lua_bindings/manual/CCLuaEngine.h",
+		"/Users/zhangsp/Documents/quick-3.3/cocos/scripting/lua-bindings/manual/cocos2d/LuaScriptHandlerMgr.h",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/lib/lua_bindings/manual/LuaScriptHandlerMgr.h",
+		"/Users/zhangsp/Documents/quick-3.3/cocos/scripting/lua-bindings/manual/CCLuaEngine.h",
+		"/Users/zhangsp/Documents/quick-3.3/cocos/scripting/lua-bindings/manual/CCLuaEngine.cpp",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/game.ini",
+		"/Users/zhangsp/Documents/quick-3.3/cocos/scripting/lua-bindings/manual/CCLuaStack.cpp",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/lib/lua_bindings/manual/CCLuaStack.cpp",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/lib/lua_bindings/manual/CCLuaStack.h",
+		"/Users/zhangsp/Documents/quick-3.3/cocos/scripting/lua-bindings/manual/CCLuaStack.h",
+		"/Users/zhangsp/Documents/CocosProjects/bash_profile.text",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_studio.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_cocosbuilder.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_csloader.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_cocosdenshion.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_audioengine.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_assetsmanager.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_spine.ini",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/genbindings.py",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/genbindings_game.py",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/cocos2dx_extension.ini",
+		"/Users/zhangsp/测试819/untitled",
+		"/Users/zhangsp/测试819/819.txt",
+		"/Users/zhangsp/819/index.php",
+		"/Users/zhangsp/Documents/CocosProjects/CocosLuaGame/frameworks/cocos2d-x/tools/bindings-generator/generator",
+		"/Users/zhangsp/Documents/quick-3.3/tools/bindings-generator/generator",
+		"/Users/zhangsp/Documents/quick-3.3/tools/bindings-generator/targets/lua/conversions.yaml",
+		"/Users/zhangsp/Documents/CocosProjects/CocosLuaGame/frameworks/cocos2d-x/tools/bindings-generator/targets/lua/conversions.yaml",
+		"/Users/zhangsp/Documents/CocosProjects/CocosLuaGame/frameworks/cocos2d-x/tools/tolua/genbindings_game.py",
+		"/Users/zhangsp/Documents/quick-3.3/tools/tolua/genbindings_game.py_2",
+		"/Users/zhangsp/Documents/CocosProjects/Cocos2dxGAFPlayer-release-cocos2dx-3/Examples/Classes/GafFeatures.cpp",
+		"/Users/zhangsp/Library/Application Support/Sublime Text 3/Packages/User/QuickXDev.sublime-settings",
+		"/Users/zhangsp/Documents/quick-3.3/quick/welcome/src/config.lua",
+		"/Users/zhangsp/Documents/quick-3.3/quick/welcome/src/main.lua",
+		"/Users/zhangsp/Documents/quick-3.3/quick/welcome/src/player.lua",
+		"/Users/zhangsp/Documents/quick-3.3/setup_mac.sh",
+		"/Users/zhangsp/资源/项目/GemPuzzleLua/sources/SimulatorConfig.cpp",
+		"/Users/zhangsp/Documents/quick-3.3/quick/welcome/src/app/scenes/BuildProjectUI.lua",
+		"/Users/zhangsp/Documents/quick-3.3/quick/lib/quick-src/ProjectConfig/ProjectConfig.cpp",
+		"/opt/local/var/macports/sources/rsync.macports.org/release/tarballs/ports/databases/postgis/Portfile",
+		"/Users/zhangsp/Documents/quick-3.3/quick/samples/drag/src/config.lua",
+		"/Users/zhangsp/Documents/quick-3.3/quick/samples/mvc/src/config.lua",
+		"/opt/local/var/macports/sources/rsync.macports.org/release/tarballs/ports/databases/postgis2/Portfile",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/scenes/MainScene.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/views/battle/BattleLoadingLayer.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/MemberIdleState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/scenes/ArenaBattleScene.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Redneck.GUI.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Redneck_Debug.GUI.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Redneck_Init.GUI.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Images/2048px/Abomb.dat.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Redneck_Debug.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/LevelGenerator.txt",
+		"/Users/zhangsp/Documents/quick-3.3/setup_win.bat",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Hints.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Options.txt",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectX/素材/Data/Monsters.txt",
+		"/Users/zhangsp/pack/沼泽派对/Payload/Swamp Attack.app/Data/GameItems.def",
+		"/Users/zhangsp/Documents/quick-3.3/external/lua/quick/lua_cocos2dx_quick_manual.cpp",
+		"/Users/zhangsp/Documents/quick-3.2rc1/quick/samples/coinflip/src/app/data/Levels.lua",
+		"/Users/zhangsp/pack/Swamp Attack无限金币钻石修改存档-18183单机频道/Documents/queue/queue_parts_descs.xml",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/views/battle/BattleLoseLayer.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/node/CharacterNode.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/views/main/MainLayer.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/views/battle/MemberButton.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/MemberMoveAttackRangeState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/views/battle/BattleHubLayer.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/BattleLogic.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/LeaderNearAttackState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/config.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/ui/ToastView.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/scenes/BattleScene.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/util/ResManage.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/search_path_lua.sh",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/res/json/hero_exp.json",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/res/json/buff.json",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/MyApp副本.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/model/CharacterModel.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/res/json/character.json",
+		"/Users/zhangsp/Documents/cocosWeb/WeixinApi-master 2/sample/sample-normal.html",
+		"/Users/zhangsp/Documents/cocosWeb/WeixinApi-master 2/WeixinApi.js",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/publish/html5/index.html",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/src/GameOverScene.js",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/src/GameData.js",
+		"/Users/zhangsp/Documents/cocosWeb/CocosJSGame/src/GameStartLayer.js",
+		"/Users/zhangsp/cocos2d/cocos2d-js-v3.1/samples/js-tests/src/ExtensionsTest/AssetsManagerTest/AssetsManagerTest.js",
+		"/Users/zhangsp/cocos2d/cocos2d-js-v3.1/samples/js-tests/src/SysTest/SysTest.js",
+		"/Users/zhangsp/Documents/cocosWeb/Swim/publish/html5/index.html",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/EnemyNearAttackState.lua",
+		"/Users/zhangsp/小游戏/凿凿看/index.html",
+		"/Users/zhangsp/Documents/cocosWeb/WeixinApi-master 2/index.html",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/publish/html5/WeixinApi.js",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/publish/html5/index副本.html",
+		"/Users/zhangsp/Documents/cocosWeb/Wool/index.html",
+		"/Users/zhangsp/Documents/cocosWeb/Swim/publish/myswim/1/index.html",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/LeaderIdleState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/MemberWalkState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/LeaderSkillState.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/res/json/enemy.json",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/state/MemberDamage1State.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/node/EnemyNode.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/model/EnemyModel.lua",
+		"/Users/zhangsp/Documents/CocosProjects/ProjectB/src/app/battle/node/RoleNode.lua"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ScriptHandlerMgr",
+			"anim",
+			"handleEvent",
+			"anim",
+			"CC_USE_CCS_ARMATURE",
+			"custom_headers",
+			"cocos_root",
+			"cocosdir",
+			"NDKROO",
+			"generator.py",
+			"createObject",
+			"PROJDIR",
+			"player.lua",
+			"project",
+			"setQuickRootPath",
+			"quickRootPath",
+			"PROJDIR",
+			"update",
+			"rc0",
+			"sArthas.gaf",
+			"sArthas",
+			"Altria",
+			"sIllidan",
+			"handler",
+			"ready",
+			"theData",
+			"handler",
+			"_share",
+			"data",
+			"_share",
+			"BattlePosition.right",
+			"BattlePosition.right ",
+			"leaderDistance",
+			"leaderNode",
+			"GameOver",
+			"getLea",
+			"showAll",
+			"\";\n",
+			"onCharacterKill",
+			"\"\n",
+			"BattleEvent.GAME_LOSE",
+			"onGameLose",
+			"setTempLayerVisible",
+			"GAME_LOSE",
+			"onCallMember",
+			"onGameLose",
+			"\"6\"",
+			"createFrameMap",
+			"attackFrameMap",
+			" \n",
+			"createRole",
+			"members",
+			"self.members = {}",
+			"params",
+			"createMaskLayer",
+			"createMap",
+			"self.params",
+			"canvas",
+			"initGame",
+			"init",
+			"hideOptionMenu",
+			"ready",
+			"CQLuaSepcialMethonds",
+			"QPostClient",
+			"CQPostClient",
+			"DataCenter",
+			"play.",
+			"play",
+			"playe",
+			"player",
+			"onDieAnimationFinished",
+			"m_readyForCleanup",
+			"skillTotal",
+			"attackTotal",
+			"skillTotal",
+			"printError",
+			"cc.assert",
+			"Altria",
+			"Altria.gaf",
+			"print enter",
+			"touch",
+			"GafAssetManager",
+			"GafAssetCache",
+			"manager",
+			"buff",
+			"touch",
+			"assetMap",
+			"connect_failure",
+			"BattleLoadingLayer",
+			"performWithDelayGlobal",
+			"m_musicEffects",
+			"MusicEffects_t",
+			"m_musicEffects",
+			"lua_game_AssetWrapper_load",
+			"m_musicEffects",
+			"lua_game_AssetWrapper_load",
+			"load",
+			"_create",
+			"create",
+			"lua_register_game_AssetWrapper",
+			"create",
+			"LuaSkeletonAnimation",
+			"create",
+			"lua_cocos2dx_TableView_setDelegate",
+			"tableview create",
+			"tableview",
+			"AnimWrapper",
+			"lua_game_AnimWrapper_constructor",
+			"_constructor",
+			"create",
+			"__timeScheduleHandle",
+			"handle",
+			"stopAllSchedule",
+			"doDead",
+			"stopAllSchedule",
+			"doAutoSubAnger",
+			"BattleEvent",
+			"BattlePosition.left",
+			" BattlePosition.left",
+			"isPaused",
+			"“7”",
+			"findRoles",
+			"pauseRoles",
+			"pause",
+			"rest()",
+			"members",
+			"memberIds",
+			"createRole"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"generator_game.py",
+			"",
+			"BattleLogicState",
+			"id : \"[1-9]\"",
+			"id : \"*\"",
+			"rectUnion",
+			"rectIntersection",
+			"nodeSize",
+			"resource",
+			"res2",
+			"yuanjian",
+			"layer",
+			"kulou-yz_copy",
+			"kaijuren",
+			"yuanjian_",
+			"Layer_",
+			"kulou-yz_2",
+			"kaijuren",
+			"js",
+			"res/",
+			"",
+			"|",
+			"",
+			";&#x",
+			"'",
+			"','",
+			"（‘",
+			"','",
+			"('",
+			"')",
+			"','",
+			"('",
+			"')",
+			"','",
+			"('",
+			"');",
+			"','",
+			"('",
+			"')",
+			"','",
+			"('",
+			"')",
+			"','",
+			",'",
+			"('",
+			"'",
+			"')",
+			"','",
+			"('",
+			"player_task ",
+			"player_info ",
+			"player_chapter",
+			"player_hero ",
+			"pleyer_spend_gems ",
+			"player_spend_coin ",
+			"player_item ",
+			"player_item",
+			"player_income_gems ",
+			"player_income_coin ",
+			"player_enemy ",
+			"player_enemy",
+			"",
+			",",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 157.0
+	},
+	"project": "hahahero.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"my",
+				"src/app/MyApp.lua"
+			],
+			[
+				"loading",
+				"src/app/views/battle/BattleLoadingLayer.lua"
+			],
+			[
+				"lose",
+				"src/app/views/battle/BattleLoseLayer.lua"
+			],
+			[
+				"hub",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"battlesc",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"ana",
+				"src/app/scenes/ArenaBattleScene.lua"
+			],
+			[
+				"mainlay",
+				"src/app/views/main/MainLayer.lua"
+			],
+			[
+				"mains",
+				"src/app/scenes/MainScene.lua"
+			],
+			[
+				"battlescene",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"myap",
+				"src/app/MyApp.lua"
+			],
+			[
+				"memberbu",
+				"src/app/views/battle/MemberButton.lua"
+			],
+			[
+				"charano",
+				"src/app/battle/node/CharacterNode.lua"
+			],
+			[
+				"memberide",
+				"src/app/battle/state/MemberIdleState.lua"
+			],
+			[
+				"myapp",
+				"src/app/MyApp.lua"
+			],
+			[
+				"memberw",
+				"src/app/battle/state/MemberWalkState.lua"
+			],
+			[
+				"leaderide",
+				"src/app/battle/state/LeaderIdleState.lua"
+			],
+			[
+				"memberid",
+				"src/app/battle/state/MemberIdleState.lua"
+			],
+			[
+				"enemyno",
+				"src/app/battle/node/EnemyNode.lua"
+			],
+			[
+				"rolenode",
+				"src/app/battle/node/RoleNode.lua"
+			],
+			[
+				"areaba",
+				"src/app/scenes/ArenaBattleScene.lua"
+			],
+			[
+				"memberwa",
+				"src/app/battle/state/MemberWalkState.lua"
+			],
+			[
+				"leaderi",
+				"src/app/battle/state/LeaderIdleState.lua"
+			],
+			[
+				"enemy",
+				"res/json/enemy.json"
+			],
+			[
+				"gamedata",
+				"src/app/data/GameData.lua"
+			],
+			[
+				"member",
+				"src/app/battle/state/MemberIdleState.lua"
+			],
+			[
+				"move",
+				"src/app/battle/state/MemberMoveAttackRangeState.lua"
+			],
+			[
+				"battlesce",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"memberwal",
+				"src/app/battle/state/MemberWalkState.lua"
+			],
+			[
+				"walk",
+				"src/app/battle/state/EnemyWalkState.lua"
+			],
+			[
+				"damage2",
+				"src/app/battle/state/EnemyDamage2State.lua"
+			],
+			[
+				"roleno",
+				"src/app/battle/node/RoleNode.lua"
+			],
+			[
+				"leaderdead",
+				"src/app/battle/state/LeaderDeadState.lua"
+			],
+			[
+				"membermove",
+				"src/app/battle/state/MemberMoveAttackRangeState.lua"
+			],
+			[
+				"gameno",
+				"src/app/battle/node/GameNode.lua"
+			],
+			[
+				"battleman",
+				"src/app/battle/BattleManager.lua"
+			],
+			[
+				"membera",
+				"src/app/battle/state/MemberAttackState.lua"
+			],
+			[
+				"chara",
+				"src/app/battle/model/CharacterModel.lua"
+			],
+			[
+				"rolen",
+				"src/app/battle/node/RoleNode.lua"
+			],
+			[
+				"nearski",
+				"src/app/battle/skill/NearAttackSkill.lua"
+			],
+			[
+				"nearsk",
+				"src/app/battle/state/EnemyNearAttackState.lua"
+			],
+			[
+				"rolemo",
+				"src/app/battle/model/RoleModel.lua"
+			],
+			[
+				"gamenode",
+				"src/app/battle/node/GameNode.lua"
+			],
+			[
+				"anarba",
+				"src/app/scenes/ArenaBattleScene.lua"
+			],
+			[
+				"leadern",
+				"src/app/battle/state/LeaderNearAttackState.lua"
+			],
+			[
+				"event",
+				"src/app/battle/BattleEvent.lua"
+			],
+			[
+				"battlescen",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"battlese",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"char",
+				"res/json/character.json"
+			],
+			[
+				"leadernear",
+				"src/app/battle/state/LeaderNearAttackState.lua"
+			],
+			[
+				"init",
+				"src/app/ui/base/init.lua"
+			],
+			[
+				"gaf",
+				"src/app/battle/GafAssetCache.lua"
+			],
+			[
+				"memberfar",
+				"src/app/battle/state/MemberFarAttackState.lua"
+			],
+			[
+				"membernear",
+				"src/app/battle/state/MemberNearAttackState.lua"
+			],
+			[
+				"leaar",
+				"src/app/battle/state/LeaderNearAttackState.lua"
+			],
+			[
+				"enemynear",
+				"src/app/battle/state/EnemyNearAttackState.lua"
+			],
+			[
+				"enemyfar",
+				"src/app/battle/state/EnemyFarAttackState.lua"
+			],
+			[
+				"skilman",
+				"src/app/battle/skill/SkillManager.lua"
+			],
+			[
+				"leaderfa",
+				"src/app/battle/state/LeaderFarAttackState.lua"
+			],
+			[
+				"leaderskill",
+				"src/app/battle/state/LeaderSkillState.lua"
+			],
+			[
+				"leaderattack",
+				"src/app/battle/state/LeaderNearAttackState.lua"
+			],
+			[
+				"battlemana",
+				"src/app/battle/BattleManager.lua"
+			],
+			[
+				"enemymo",
+				"src/app/battle/model/EnemyModel.lua"
+			],
+			[
+				"leaderwa",
+				"src/app/battle/state/LeaderWalkState.lua"
+			],
+			[
+				"characterno",
+				"src/app/battle/node/CharacterNode.lua"
+			],
+			[
+				"charm",
+				"src/app/battle/model/CharacterModel.lua"
+			],
+			[
+				"enemynode",
+				"src/app/battle/node/EnemyNode.lua"
+			],
+			[
+				"rolemode",
+				"src/app/battle/model/RoleModel.lua"
+			],
+			[
+				"hublu",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"battles",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"charamo",
+				"src/app/battle/model/CharacterModel.lua"
+			],
+			[
+				"leaderw",
+				"src/app/battle/state/LeaderWalkState.lua"
+			],
+			[
+				"leaderwal",
+				"src/app/battle/state/LeaderWalkState.lua"
+			],
+			[
+				"battlescne",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"ga",
+				"src/app/battle/GafAssetCache.lua"
+			],
+			[
+				"mya",
+				"src/app/MyApp.lua"
+			],
+			[
+				"gafma",
+				"src/app/battle/GafAssetManager.lua"
+			],
+			[
+				"battlehu",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"hubl",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"battlemanal",
+				"src/app/battle/BattleManager.lua"
+			],
+			[
+				"enemyjs",
+				"res/json/enemy.json"
+			],
+			[
+				"logic",
+				"src/app/battle/BattleLogic.lua"
+			],
+			[
+				"charactermo",
+				"src/app/battle/model/CharacterModel.lua"
+			],
+			[
+				"custo",
+				"res/json/custom.json"
+			],
+			[
+				"hublua",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"battlehub",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"memberbut",
+				"src/app/views/battle/MemberButton.lua"
+			],
+			[
+				"skill",
+				"src/app/views/battle/SkillButton.lua"
+			],
+			[
+				"skillstatelu",
+				"src/app/battle/state/EnemySkillState.lua"
+			],
+			[
+				"skillbutt",
+				"src/app/views/battle/SkillButton.lua"
+			],
+			[
+				"hublay",
+				"src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"battlesca",
+				"src/app/scenes/BattleScene.lua"
+			],
+			[
+				"battleload",
+				"src/app/views/battle/BattleLoadingLayer.lua"
+			],
+			[
+				"hublayerlu",
+				"ProjectB/src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"winl",
+				"ProjectB/src/app/views/battle/BattleWinLayer.lua"
+			],
+			[
+				"battlescenelu",
+				"ProjectB/src/app/scenes/BattleScene.lua"
+			],
+			[
+				"hublayer",
+				"Classes/game/view/BattleHubLayer.cpp"
+			],
+			[
+				"memberdead",
+				"ProjectB/src/app/battle/state/MemberDeadState.lua"
+			],
+			[
+				"enemyid",
+				"ProjectB/src/app/battle/state/EnemyIdleState.lua"
+			],
+			[
+				"enemyjso",
+				"ProjectB/res/json/enemy.json"
+			],
+			[
+				"battlescenlu",
+				"ProjectB/src/app/scenes/BattleScene.lua"
+			],
+			[
+				"enemyide",
+				"ProjectB/src/app/battle/state/EnemyIdleState.lua"
+			],
+			[
+				"enemyfa",
+				"ProjectB/src/app/battle/state/EnemyFarAttackState.lua"
+			],
+			[
+				"enemyattacks",
+				"ProjectB/src/app/battle/state/EnemyAttackState.lua"
+			],
+			[
+				"mis",
+				"ProjectB/src/app/battle/node/MissileNode.lua"
+			],
+			[
+				"leaderid",
+				"ProjectB/src/app/battle/state/LeaderIdleState.lua"
+			],
+			[
+				"enemywal",
+				"ProjectB/src/app/battle/state/EnemyWalkState.lua"
+			],
+			[
+				"enemyidel",
+				"ProjectB/src/app/battle/state/EnemyIdleState.lua"
+			],
+			[
+				"membergroup",
+				"ProjectB/src/app/views/battle/MemberButtonGroup.lua"
+			],
+			[
+				"battlemanagerlu",
+				"ProjectB/src/app/battle/BattleManager.lua"
+			],
+			[
+				"charamode",
+				"ProjectB/src/app/battle/model/CharacterModel.lua"
+			],
+			[
+				"leader",
+				"ProjectB/src/app/battle/state/LeaderWalkState.lua"
+			],
+			[
+				"memberbutto",
+				"ProjectB/src/app/views/battle/MemberButton.lua"
+			],
+			[
+				"charanode",
+				"ProjectB/src/app/battle/node/CharacterNode.lua"
+			],
+			[
+				"memberi",
+				"ProjectB/src/app/battle/state/MemberIdleState.lua"
+			],
+			[
+				"leaderidel",
+				"ProjectB/src/app/battle/state/LeaderIdleState.lua"
+			],
+			[
+				"myapplu",
+				"ProjectB/src/app/MyApp.lua"
+			],
+			[
+				"hublyaerlu",
+				"ProjectB/src/app/views/battle/BattleHubLayer.lua"
+			],
+			[
+				"cha",
+				"ProjectB/src/app/battle/node/CharacterNode.lua"
+			],
+			[
+				"battlescelu",
+				"ProjectB/src/app/scenes/BattleScene.lua"
+			],
+			[
+				"losela",
+				"ProjectB/src/app/views/battle/BattleLoseLayer.lua"
+			],
+			[
+				"winla",
+				"ProjectB/src/app/views/battle/BattleWinLayer.lua"
+			],
+			[
+				"idel",
+				"ProjectB/src/app/battle/state/EnemyIdleState.lua"
+			],
+			[
+				"gameda",
+				"ProjectB/src/app/data/GameData.lua"
+			],
+			[
+				"gamedalu",
+				"ProjectB/src/app/data/GameData.lua"
+			],
+			[
+				"chano",
+				"ProjectB/src/app/battle/node/CharacterNode.lua"
+			],
+			[
+				"chrajs",
+				"ProjectB/res/json/character.json"
+			],
+			[
+				"winlay",
+				"ProjectB/src/app/scenes/view/battle/BattleWinLayer.lua"
+			],
+			[
+				"deadstate",
+				"ProjectB/src/app/battle/state/EnemyDeadState.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/CocosProjects/HaHaHero/HaHaHero.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 548.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

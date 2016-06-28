@@ -1,0 +1,11 @@
+local ConsortiaInfo = 
+{
+	["1"] = 
+	{
+		["ConsortiaOpenLeve"] = 35,
+		["ConsortiaShopGoodsMun"] = 12,
+		["ConsortiaShopRefreshTime"] = [[9:00]],
+		["Consortiaestablishcost"] = 350
+	}
+}
+return ConsortiaInfo

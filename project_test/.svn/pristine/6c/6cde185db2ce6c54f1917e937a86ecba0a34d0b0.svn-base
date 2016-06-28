@@ -1,0 +1,42 @@
+local SlotModel = class("SlotModel")
+
+function SlotModel:ctor()
+	self.pos = 0
+	self.times = 0
+	self.itemsData = {}
+	self.itemsGet = {}
+	self.price1 = 200
+	self.price2 = 900
+	self.gold = 10000
+	self.scale = {0.5,0.6,0.7,0.8,0.9}
+end
+
+function SlotModel:update(data)
+	self.times = data.param2
+	for i,v in ipairs(data.a_param1) do
+		self.itemsData[i] = v
+	end
+end
+
+function SlotModel:getCost(type_)
+	if type_ == 1 then
+		local scale = 1
+		if self.times < 5 then
+			scale = self.scale[self.times+1]
+		end
+		local cost = self.price1 * scale
+		return cost
+	else
+		return self.price2
+	end
+end
+
+function SlotModel:getGold(type_)
+	if type_ == 1 then
+		return self.gold
+	else
+		return self.gold * 5
+	end
+end
+
+return SlotModel

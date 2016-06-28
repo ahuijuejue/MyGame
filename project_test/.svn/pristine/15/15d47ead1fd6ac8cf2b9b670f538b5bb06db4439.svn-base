@@ -1,0 +1,46 @@
+local FinishGeneralActivityResponse = class("FinishGeneralActivityResponse")
+function FinishGeneralActivityResponse:FinishGeneralActivityResponse(data)
+	-- 完成通用活动
+	if data.result == 1 then 
+		local dataId = data.param1 		-- 活动id 
+		local items = data.a_param1 	-- 奖励的物品
+
+		local data = ActivityNormalData:getActivityData(dataId) 
+		data:setCompleted(true)
+--------------------------------------------------------------
+
+-- 消耗物品
+		if data.okCode == 28 then -- 交换物品
+			local oknums = data.okParam2
+			local okids = data.okParam1
+			for i,v in ipairs(okids) do
+				local itemId = tostring(v)
+				local itemCount = checknumber(oknums[i])				
+				UserData:removeItem(itemId, itemCount)
+			end
+		end 
+
+-- 增加奖励物品
+		UserData:rewardItems(items) 
+
+		local showItems = UserData:parseItems(items)
+
+		return {items=showItems}
+
+	elseif data.result == -1 then 
+		showToast({text="活动已经完成过或条件不足", time=3})
+	end 
+
+end
+function FinishGeneralActivityResponse:ctor()
+	--响应消息号
+	self.order = 30003
+	--返回结果,1 成功; -1 活动已经完成过或条件不足
+	self.result =  ""
+	--任务id
+	self.param1 =  ""
+	--奖励 的物品id
+	self.a_param1 =  ""	
+end
+
+return FinishGeneralActivityResponse

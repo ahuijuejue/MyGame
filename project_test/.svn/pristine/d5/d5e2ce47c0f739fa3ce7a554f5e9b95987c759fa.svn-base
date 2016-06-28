@@ -1,0 +1,194 @@
+--[[
+	充值反馈活动
+]]
+local BackChargeLayer = class("BackChargeLayer",function()
+	return display.newNode()
+end)
+
+BackChargeData = require("app.data.BackChargeData").new() --TODO
+DiscountShopData = require("app.data.DiscountShopData").new() --暂用数据
+
+local backImage = "Union_Board.png"
+
+function BackChargeLayer:ctor()
+	self.arr = DiscountShopData.data --TODO
+	print("七日充值反馈活动开始")
+	self:initData()
+	self:initView() --时间
+
+	self:addNodeEventListener(cc.NODE_EVENT, function (event)
+		if event.name == "enter" then
+			self:onEnter()		
+		elseif event.name == "exit" then
+			self:onExit()
+		end
+	end)
+end
+
+function BackChargeLayer:initData()
+
+	--获取开放的第几天
+	self.days = BackChargeData.days
+
+	print("这是第几天.."..self.days) --8
+end
+
+function BackChargeLayer:initView()
+	-- 灰层背景
+	CommonView.blackLayer2()
+    :addTo(self)
+    :onTouch(function()
+    	-- body
+    end)
+
+    local layer_ = display.newNode():size(960,640):align(display.CENTER)
+    layer_:addTo(self):center()
+    self.layer_ = layer_
+
+    --背景
+    local back = display.newSprite(backImage)
+    :align(display.CENTER)
+    :addTo(self.layer_)
+    :pos(480,295)
+    -- 关闭按钮
+	CommonButton.close():addTo(self.layer_):pos(850,520)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close()
+		self:removeFromParent()
+	end)
+
+
+	--时间标签
+	self.timeLabel = base.Label.new({text = "时间",color = CommonView.color_green(),size = 20})
+	:addTo(self.layer_)
+	:pos(350,160)
+	:zorder(2)
+
+	--添加商品layer1
+	self.layer1 = display.newLayer()
+	:addTo(self.layer_)
+	:pos(480,220)
+	self.layer1:setTouchEnabled(true)
+	self.layer1:setTouchSwallowEnabled(false)
+
+	--文字
+	self:initWords()
+	--充值按钮
+	self.btnBuy = CommonButton.yellow("领取")
+	:pos(720,370)
+	:onButtonClicked(function()
+		print("点击...充值按钮")
+		-- if UserData.diamond < self.arr[index].sale then
+		-- 	showToast({text="钻石不足"})
+		-- else
+		-- 	NetHandler.gameRequest("BuyShopGoods",{param1  = tostring(index), param2 = 0, param3  = 8})
+		-- end
+	end)
+	:addTo(self.layer_)
+
+	--充值按钮上面TODO
+	display.newTTFLabel({text = "today".."/".."pay",color = CommonView.color_black(),size = 20})
+	:addTo(self.btnBuy)
+	:pos(0,45)
+
+	display.newTTFLabel({text = "time",color = CommonView.color_black(),size = 20})
+	:addTo(self.btnBuy)
+	:pos(0,45)
+	:setVisible(false)
+
+
+	self:schedule(function()
+		self:updateTimeLabel()
+	end,0.2)
+end
+
+--获取商店开放时间
+function BackChargeLayer:getDays()
+	local leftTime = UserData.backRechargeEndTime - UserData.serverTime
+	local days = math.floor(leftTime / 86400)
+
+	print("商店开放时间days.."..days.."  ".."leftTime.."..leftTime.."..UserData.backRechargeEndTime.."..UserData.backRechargeEndTime)
+	return math.min(math.max(1,8-days),8) 
+end
+
+function BackChargeLayer:updateTimeLabel()
+	local nowTime = UserData:getServerSecond()
+	local date = convertSecToDate(UserData:getBackRecharge() - nowTime)
+
+	local labelstr = ""
+	-- self.day = date.day
+	if date.day > 0 then 
+		labelstr = labelstr..tostring(date.day).."天"
+	end 
+	labelstr = labelstr..string.format("%02d:%02d:%02d", date.hour, date.min, date.sec)
+	self.timeLabel:setString(labelstr)
+end
+
+function BackChargeLayer:initWords()
+	display.newTTFLabel({text = "今日充值".."(...)".."元即可领取第".."(...)".."阶段奖励:",color = CommonView.color_black(),size = 22})
+	:addTo(self.layer_)
+	:pos(350,450)
+
+	display.newTTFLabel({text = "充值5天,就可领取最终大奖",color = CommonView.color_black(),size = 22})
+	:addTo(self.layer_)
+	:pos(302,300)
+
+
+	display.newTTFLabel({text = "活动规则: 1.达成一个阶段的充值任务后,第二天凌晨5点开启下一个阶段.\n                2.每一个阶段只累积当天的充值金额.\n                3.本活动将于                                  后消失,所有未领奖励将自动发放邮箱\n                4.待定",color = CommonView.color_black(),size = 22})
+	:addTo(self.layer_)
+	:pos(500,170)
+
+	--添加线
+	display.newSprite("Line_Discout.png")
+	:addTo(self.layer_)
+	:pos(450,240)
+	:zorder(0)
+end
+
+--显示商品列表
+function BackChargeLayer:showItem(itemId, count)
+	local grid = UserData:createItemView(itemId, {scale=0.7})
+
+	local label = base.Label.new({
+		text = tostring(count),
+		size = 18,
+		color = CommonView.color_white(),
+	})
+	:align(display.BOTTOM_RIGHT)
+	:pos(50, -50)
+
+	grid:addItem(label)
+
+	return grid
+end
+
+function BackChargeLayer:showItemsView(index)
+	-- body
+	self.layer1:removeAllChildren()
+	local itemDes = self.arr[index]
+	local posX = 0-(#(itemDes.GiftItemID) - 1)*50
+	local addX = 100
+	for j=1,#(itemDes.GiftItemID) do
+    	self:showItem(itemDes.GiftItemID[j], tonumber(itemDes.GiftItemNum[j]))
+    	:addTo(self.layer1)
+    	:pos(posX+(j-1)*addX-100,150)
+    	:zorder(10)
+
+    end
+
+	-- self:updateBuyBtn(index)    --TODO
+end
+
+
+function BackChargeLayer:onEnter()
+	print("充值反馈onEnter()")
+	CommonView.animation_show_out(self.layer_)
+	self:showItemsView(4)
+end
+
+function BackChargeLayer:onExit()
+	print("充值反馈onExit()")
+end
+
+return BackChargeLayer

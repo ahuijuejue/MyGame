@@ -1,0 +1,14 @@
+local SecedeUnionResponse = class("SecedeUnionResponse")
+function SecedeUnionResponse:SecedeUnionResponse(data)
+    if data.result == 1 then
+    	GameDispatcher:dispatchEvent({name = EVENT_CONSTANT.NET_CALLBACK,data = data})
+    end
+end
+function SecedeUnionResponse:ctor()
+	--响应消息号
+	self.order = 30011
+	--返回结果,1:成功退出 ，2:会长不能退出，-1:非法操作()
+	self.result =  ""
+end
+
+return SecedeUnionResponse

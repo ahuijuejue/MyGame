@@ -1,0 +1,512 @@
+
+{
+	gl.supports_vertex_array_object: true
+	cocos2d.x.version: quick-cocos2d-x 3.3
+	gl.vendor: Intel Inc.
+	gl.supports_PVRTC: false
+	gl.renderer: Intel HD Graphics 4000 OpenGL Engine
+	cocos2d.x.compiled_with_profiler: false
+	gl.max_texture_size: 16384
+	gl.supports_ETC1: false
+	gl.supports_BGRA8888: false
+	cocos2d.x.build_type: DEBUG
+	gl.supports_discard_framebuffer: false
+	gl.supports_NPOT: true
+	gl.supports_S3TC: true
+	gl.version: 2.1 INTEL-10.12.13
+	gl.supports_ATITC: false
+	gl.max_texture_units: 16
+	cocos2d.x.compiled_with_gl_state_cache: true
+}
+
+
+Quick-Cocos2d-x C++ support ready.
+------------------------------------------------
+LOAD LUA FILE: /Users/yangjianbao/Documents/quick_project/hahahero/src/main.lua
+------------------------------------------------
+[LUA-print] ===========================================================
+[LUA-print]               LOAD QUICK FRAMEWORK
+[LUA-print] ===========================================================
+[LUA-print] [INFO] 
+[LUA-print] [INFO] # DEBUG                        = 1
+[LUA-print] [INFO] #
+[LUA-print] [INFO] # device.platform              = mac
+[LUA-print] [INFO] # device.model                 = unknown
+[LUA-print] [INFO] # device.language              = cn
+[LUA-print] [INFO] # device.writablePath          = /Users/yangjianbao/Documents/quick_project/hahahero/
+[LUA-print] [INFO] # device.directorySeparator    = /
+[LUA-print] [INFO] # device.pathSeparator         = :
+[LUA-print] [INFO] #
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = EXACT_FIT
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[LUA-print] [INFO] # display.widthInPixels        = 960.00
+[LUA-print] [INFO] # display.heightInPixels       = 640.00
+[LUA-print] [INFO] # display.contentScaleFactor   = 1.00
+[LUA-print] [INFO] # display.width                = 960.00
+[LUA-print] [INFO] # display.height               = 640.00
+[LUA-print] [INFO] # display.cx                   = 480.00
+[LUA-print] [INFO] # display.cy                   = 320.00
+[LUA-print] [INFO] # display.left                 = 0.00
+[LUA-print] [INFO] # display.right                = 960.00
+[LUA-print] [INFO] # display.top                  = 640.00
+[LUA-print] [INFO] # display.bottom               = 0.00
+[LUA-print] [INFO] # display.c_left               = -480.00
+[LUA-print] [INFO] # display.c_right              = 480.00
+[LUA-print] [INFO] # display.c_top                = 320.00
+[LUA-print] [INFO] # display.c_bottom             = -320.00
+[LUA-print] [INFO] #
+[LUA-print] [INFO] GameState.load() - get values from "/Users/yangjianbao/Documents/quick_project/hahahero/data"
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] redundancyViewVal:735
+[LUA-print] redundancyViewVal:330
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+libpng warning: Interlace handling should be turned on when using png_read_image
+[LUA-print] OpenScene:initData()
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[Edit text] content size = (550.000000, 35.000000)
+[Edit text] anchor point = (0.000000, 0.500000)
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] is ok:	601008	每日登陆1次
+[LUA-print] is ok:	652006	购买单行本漫画10次
+[LUA-print] is ok:	623001	消耗288钻
+[Edit text] content size = (550.000000, 35.000000)
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] 公会商店...
+[LUA-print] dump from: [string "app/net/response/OpenShopResponse.lua"]:3: in function 'OpenShopResponse'
+[LUA-print] - "<var>" = {
+[LUA-print] -     "a_goods" = {
+[LUA-print] -         1 = {
+[LUA-print] -             "has"   = "631"
+[LUA-print] -             "id"    = "10008"
+[LUA-print] -             "num"   = 3
+[LUA-print] -             "price" = "96"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         2 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "710500"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "132"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         3 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11003"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "112"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         4 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11005"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "144"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         5 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11006"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "168"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         6 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30103"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "24"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         7 = {
+[LUA-print] -             "has"   = "16660"
+[LUA-print] -             "id"    = "30106"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "24"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         8 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30109"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "24"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         9 = {
+[LUA-print] -             "has"   = "50"
+[LUA-print] -             "id"    = "40003"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "4000"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         10 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30103"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "24"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         11 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30107"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "24"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -         12 = {
+[LUA-print] -             "has"   = "50"
+[LUA-print] -             "id"    = "40003"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "4000"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 7
+[LUA-print] -         }
+[LUA-print] -     }
+[LUA-print] -     "diamond" = "-1"
+[LUA-print] -     "gold"    = 0
+[LUA-print] -     "order"   = 10004
+[LUA-print] -     "param1"  = 9
+[LUA-print] -     "param2"  = "今日21:00"
+[LUA-print] -     "reftime" = "今日21:00"
+[LUA-print] -     "result"  = 1
+[LUA-print] - }
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] redundancyViewVal:750
+[LUA-print] redundancyViewVal:750
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] dump from: [string "app/net/response/OpenShopResponse.lua"]:3: in function 'OpenShopResponse'
+[LUA-print] - "<var>" = {
+[LUA-print] -     "a_goods" = {
+[LUA-print] -         1 = {
+[LUA-print] -             "has"   = "575"
+[LUA-print] -             "id"    = "10018"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "80"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         2 = {
+[LUA-print] -             "has"   = "592"
+[LUA-print] -             "id"    = "10020"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "80"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         3 = {
+[LUA-print] -             "has"   = "616"
+[LUA-print] -             "id"    = "10023"
+[LUA-print] -             "num"   = 3
+[LUA-print] -             "price" = "240"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         4 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30109"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "30"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         5 = {
+[LUA-print] -             "has"   = "16661"
+[LUA-print] -             "id"    = "30109"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "30"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         6 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11002"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "120"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         7 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11009"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "400"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -         8 = {
+[LUA-print] -             "has"   = "0"
+[LUA-print] -             "id"    = "11005"
+[LUA-print] -             "num"   = 5
+[LUA-print] -             "price" = "900"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 4
+[LUA-print] -         }
+[LUA-print] -     }
+[LUA-print] -     "diamond" = "10"
+[LUA-print] -     "gold"    = 0
+[LUA-print] -     "order"   = 10004
+[LUA-print] -     "param1"  = 3
+[LUA-print] -     "param2"  = "今日21:00"
+[LUA-print] -     "reftime" = "今日21:00"
+[LUA-print] -     "result"  = 1
+[LUA-print] - }
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] redundancyViewVal:750
+[LUA-print] redundancyViewVal:750
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] dump from: [string "app/net/response/OpenShopResponse.lua"]:3: in function 'OpenShopResponse'
+[LUA-print] - "<var>" = {
+[LUA-print] -     "a_goods" = {
+[LUA-print] -         1 = {
+[LUA-print] -             "has"   = "633"
+[LUA-print] -             "id"    = "10014"
+[LUA-print] -             "num"   = 3
+[LUA-print] -             "price" = "240"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         2 = {
+[LUA-print] -             "has"   = "575"
+[LUA-print] -             "id"    = "10016"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "80"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         3 = {
+[LUA-print] -             "has"   = "665"
+[LUA-print] -             "id"    = "10022"
+[LUA-print] -             "num"   = 3
+[LUA-print] -             "price" = "240"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         4 = {
+[LUA-print] -             "has"   = "711"
+[LUA-print] -             "id"    = "12007"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "40"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         5 = {
+[LUA-print] -             "has"   = "712"
+[LUA-print] -             "id"    = "12009"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "40"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         6 = {
+[LUA-print] -             "has"   = "125"
+[LUA-print] -             "id"    = "12002"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "40"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         7 = {
+[LUA-print] -             "has"   = "124"
+[LUA-print] -             "id"    = "12003"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "40"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -         8 = {
+[LUA-print] -             "has"   = "125"
+[LUA-print] -             "id"    = "12005"
+[LUA-print] -             "num"   = 1
+[LUA-print] -             "price" = "40"
+[LUA-print] -             "sale"  = 0
+[LUA-print] -             "sell"  = "0"
+[LUA-print] -             "type"  = 6
+[LUA-print] -         }
+[LUA-print] -     }
+[LUA-print] -     "diamond" = "10"
+[LUA-print] -     "gold"    = 0
+[LUA-print] -     "order"   = 10004
+[LUA-print] -     "param1"  = 6
+[LUA-print] -     "param2"  = "今日21:00"
+[LUA-print] -     "reftime" = "今日21:00"
+[LUA-print] -     "result"  = 1
+[LUA-print] - }
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] redundancyViewVal:750
+[LUA-print] redundancyViewVal:750
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] redundancyViewVal:750
+[LUA-print] redundancyViewVal:750
+[LUA-print] reload
+[LUA-print] self rows:	2
+[LUA-print] redundancyViewVal:750
+[LUA-print] redundancyViewVal:750
+[LUA-print] reload
+[LUA-print] self rows:	2

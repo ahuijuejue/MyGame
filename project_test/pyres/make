@@ -1,0 +1,8 @@
+FILE_DIRECTORY=$(dirname "$0")
+
+cd $FILE_DIRECTORY
+
+input=../res/
+
+python make.py -i $input 
+

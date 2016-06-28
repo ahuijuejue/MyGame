@@ -1,0 +1,31 @@
+local ConsortiaCredit = 
+{
+	["1"] = 
+	{
+		["CostItemID"] = 1,
+		["CostItemNum"] = 5000,
+		["GetConsortiaExp"] = 1,
+		["GetItemID"] = [[9]],
+		["GetItemNum"] = [[100]],
+		["Name"] = [[签到]]
+	},
+	["2"] = 
+	{
+		["CostItemID"] = 2,
+		["CostItemNum"] = 30,
+		["GetConsortiaExp"] = 3,
+		["GetItemID"] = [[9]],
+		["GetItemNum"] = [[150]],
+		["Name"] = [[高级签到]]
+	},
+	["3"] = 
+	{
+		["CostItemID"] = 2,
+		["CostItemNum"] = 300,
+		["GetConsortiaExp"] = 5,
+		["GetItemID"] = [[9]],
+		["GetItemNum"] = [[300]],
+		["Name"] = [[豪华签到]]
+	}
+}
+return ConsortiaCredit

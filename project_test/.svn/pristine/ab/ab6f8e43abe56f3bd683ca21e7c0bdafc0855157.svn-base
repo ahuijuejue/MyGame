@@ -1,0 +1,45 @@
+local DiscountShopData = class("DiscountShopData")
+
+function DiscountShopData:ctor()
+	self.data = {}
+	self:createShopData()
+end
+
+function DiscountShopData:createShopData()
+	local num = table.nums(GameConfig.Discounteditems)
+	for i=1,num do
+		local shopItem = self:createItem(i)
+		table.insert(self.data,shopItem)
+	end
+end
+
+function DiscountShopData:createItem(index)
+	local cfg = GameConfig.Discounteditems[tostring(index)]
+	local shopItem = {
+		GiftItemID = cfg.GiftItemID,	--包含的物品id
+		GiftItemNum = cfg.GiftItemNum,	--物品数量
+		name = cfg.Name,	--商品名称
+		price =cfg.Price,	--商品原价
+		sale = cfg.Sale,	--商品售价
+		isBuy = false, --是否已购买该商品
+	}
+	return shopItem
+end
+
+--更新商品购买状态
+function DiscountShopData:updateBuyStatus(index,isBuy)
+	self.data[index].isBuy = isBuy or false
+end
+
+function DiscountShopData:getItem(index)
+	return self.data[index]
+end
+
+--获取商店开放时间
+function DiscountShopData:getDays()
+	local leftTime = UserData.discountEndTime - UserData.serverTime
+	local days = math.floor(leftTime / 86400)
+	return math.min(math.max(1,7-days),7) 
+end
+
+return DiscountShopData

@@ -1,0 +1,20 @@
+local UnionListData = class("UnionListData")
+
+function UnionListData:ctor()
+	self.unionFindList = {}  -- 加入公会列表显示
+end
+
+function UnionListData:insertFindData( model )
+	table.insert(self.unionFindList, model)
+end
+
+--删除聊天数据
+function UnionListData:cleanData()
+	for i,v in ipairs(self.unionFindList) do
+		v = nil
+	end
+	self.unionFindList = {}
+
+end
+
+return UnionListData

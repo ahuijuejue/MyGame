@@ -1,0 +1,18 @@
+local ChapterModel = class("ChapterModel")
+
+function ChapterModel:ctor(id)
+	--章节配置
+	local chapter = GameConfig.Chapter[tostring(id)]
+	--章节id
+	self.id = id
+	--章节名
+	self.name = chapter.Name
+	--章节标题
+	self.title = chapter.ChapterNum
+	--对应的章节id
+	self.rId = chapter.chapter2
+	--开放等级
+	self.openLv = chapter.NeedLevel
+end
+
+return ChapterModel

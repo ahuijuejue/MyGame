@@ -1,0 +1,10 @@
+FILE_DIRECTORY=$(dirname "$0")
+
+cd $FILE_DIRECTORY
+
+ver=1.0.1
+
+list=1.0.0,$ver
+
+python ckflist.py -i $ver/code/ -list $list -o $ver -ver ver
+

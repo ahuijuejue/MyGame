@@ -1,0 +1,94 @@
+local UnionJoinLayer = class("UnionJoinLayer",function ()
+	return display.newNode()
+end)
+
+local listImage = "union_list_bg.png"
+local barImage = "union_bar.png"
+
+function UnionJoinLayer:ctor()
+	self:initData()
+	self:initView()
+end
+
+function UnionJoinLayer:initData()
+	self.unionData = {}
+end
+
+function UnionJoinLayer:initView()
+	self.listView = cc.TableView:create(cc.size(660,335))
+	self.listView:setPosition(30,23)
+	self.listView:setDirection(cc.SCROLLVIEW_DIRECTION_VERTICAL)
+	self.listView:setVerticalFillOrder(cc.TABLEVIEW_FILL_TOPDOWN)
+    self.listView:setDelegate()
+
+    self.listView:registerScriptHandler(handler(self, self.scrollViewDidScroll), 0)
+    self.listView:registerScriptHandler(handler(self, self.tableCellTouched), cc.TABLECELL_TOUCHED)
+	self.listView:registerScriptHandler(handler(self, self.cellSizeForTable), cc.TABLECELL_SIZE_FOR_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.tableCellAtIndex), cc.TABLECELL_SIZE_AT_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.numberOfCellsInTableView), cc.NUMBER_OF_CELLS_IN_TABLEVIEW)
+    self.listView:reloadData()
+
+	self:addChild(self.listView)
+end
+
+function UnionJoinLayer:scrollViewDidScroll(table)
+
+end
+
+function UnionJoinLayer:tableCellTouched(table,cell)
+	print("cellIdx:"..cell:getIdx())
+end
+
+function UnionJoinLayer:cellSizeForTable(table,idx)
+	return 100
+end
+
+function UnionJoinLayer:tableCellAtIndex(table,idx)
+	return self:createCell(idx)
+end
+
+function UnionJoinLayer:numberOfCellsInTableView(table)
+	return 5
+end
+
+function UnionJoinLayer:createCell(idx)
+	local cell = cc.TableViewCell:new()
+	cell:setIdx(idx)
+
+    local bgSprite = display.newSprite(listImage)
+    bgSprite:setAnchorPoint(0,0)
+    cell:addChild(bgSprite)
+
+	local data  = self.unionData[idx]
+	local grid = base.Grid.new()
+	local index = idx
+	self:setGridShow(grid, data, index)
+	cell:addChild(grid)
+
+    return cell
+end
+
+function UnionJoinLayer:setGridShow(grid, data, index)
+	grid:removeItems()
+	:addItems({
+		display.newSprite("union001.png"):pos(55,47), -- 公会头像  data.unionIcon
+        display.newTTFLabel({text = "lv"..index+1,color = CommonView.color_black()}):pos(120,40),  -- 公会等级  data.unionLv
+        display.newTTFLabel({text = "申请等级".."data.joinLv",color = CommonView.color_black()}):pos(600,70),   -- 申请等级
+        CommonButton.yellow("立即加入")   -- 申请加入按钮
+        :onButtonClicked(function ()
+			print("申请加入公会")
+		end)
+		:pos(545,30),
+		})
+
+	local pos = 180
+	local member_ = "（".."1".."/".."10".."）" -- data.memberNums data.memberMaxNums
+    local name = display.newTTFLabel({text = "data.name"..member_,color = CommonView.color_black()})  -- 公会名称
+    name:pos(pos+name:getContentSize().width/2,60)
+    local des = display.newTTFLabel({text = "data.unionDes",color = CommonView.color_black()})  -- 公会简介
+    des:pos(pos+des:getContentSize().width/2,30)
+
+    grid:addItems({name, des})
+end
+
+return UnionJoinLayer

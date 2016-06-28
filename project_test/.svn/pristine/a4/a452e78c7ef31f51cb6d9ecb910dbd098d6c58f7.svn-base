@@ -1,0 +1,553 @@
+local Register = 
+{
+	["20160401"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 2,
+		["Month"] = 4,
+		["VipLv"] = 1,
+		["VipMultiple"] = 2
+	},
+	["20160402"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 666,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160403"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 60,
+		["Month"] = 4,
+		["VipLv"] = 2,
+		["VipMultiple"] = 2
+	},
+	["20160404"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 88888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160405"] = 
+	{
+		["HeroID"] = [[10029]],
+		["ItemID"] = nil,
+		["ItemNum"] = nil,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160406"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 3,
+		["Month"] = 4,
+		["VipLv"] = 3,
+		["VipMultiple"] = 2
+	},
+	["20160407"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160408"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 90,
+		["Month"] = 4,
+		["VipLv"] = 3,
+		["VipMultiple"] = 2
+	},
+	["20160409"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 138888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160410"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 4,
+		["VipMultiple"] = 2
+	},
+	["20160411"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 4,
+		["Month"] = 4,
+		["VipLv"] = 4,
+		["VipMultiple"] = 2
+	},
+	["20160412"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 666,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160413"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 120,
+		["Month"] = 4,
+		["VipLv"] = 5,
+		["VipMultiple"] = 2
+	},
+	["20160414"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 188888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160415"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 2,
+		["Month"] = 4,
+		["VipLv"] = 6,
+		["VipMultiple"] = 2
+	},
+	["20160416"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 5,
+		["Month"] = 4,
+		["VipLv"] = 7,
+		["VipMultiple"] = 2
+	},
+	["20160417"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160418"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 150,
+		["Month"] = 4,
+		["VipLv"] = 8,
+		["VipMultiple"] = 2
+	},
+	["20160419"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 238888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160420"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 3,
+		["Month"] = 4,
+		["VipLv"] = 9,
+		["VipMultiple"] = 2
+	},
+	["20160421"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 6,
+		["Month"] = 4,
+		["VipLv"] = 10,
+		["VipMultiple"] = 2
+	},
+	["20160422"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160423"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 180,
+		["Month"] = 4,
+		["VipLv"] = 10,
+		["VipMultiple"] = 2
+	},
+	["20160424"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 288888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160425"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 4,
+		["Month"] = 4,
+		["VipLv"] = 11,
+		["VipMultiple"] = 2
+	},
+	["20160426"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 7,
+		["Month"] = 4,
+		["VipLv"] = 12,
+		["VipMultiple"] = 2
+	},
+	["20160427"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40005]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 13,
+		["VipMultiple"] = 2
+	},
+	["20160428"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 210,
+		["Month"] = 4,
+		["VipLv"] = 13,
+		["VipMultiple"] = 2
+	},
+	["20160429"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40006]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 14,
+		["VipMultiple"] = 2
+	},
+	["20160430"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 5,
+		["Month"] = 4,
+		["VipLv"] = 15,
+		["VipMultiple"] = 2
+	},
+	["20160501"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 2,
+		["Month"] = 4,
+		["VipLv"] = 1,
+		["VipMultiple"] = 2
+	},
+	["20160502"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 666,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160503"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 60,
+		["Month"] = 4,
+		["VipLv"] = 2,
+		["VipMultiple"] = 2
+	},
+	["20160504"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 88888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160505"] = 
+	{
+		["HeroID"] = [[10029]],
+		["ItemID"] = nil,
+		["ItemNum"] = nil,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160506"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 3,
+		["Month"] = 4,
+		["VipLv"] = 3,
+		["VipMultiple"] = 2
+	},
+	["20160507"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160508"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 90,
+		["Month"] = 4,
+		["VipLv"] = 3,
+		["VipMultiple"] = 2
+	},
+	["20160509"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 138888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160510"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 4,
+		["VipMultiple"] = 2
+	},
+	["20160511"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 4,
+		["Month"] = 4,
+		["VipLv"] = 4,
+		["VipMultiple"] = 2
+	},
+	["20160512"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 666,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160513"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 120,
+		["Month"] = 4,
+		["VipLv"] = 5,
+		["VipMultiple"] = 2
+	},
+	["20160514"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 188888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160515"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 2,
+		["Month"] = 4,
+		["VipLv"] = 6,
+		["VipMultiple"] = 2
+	},
+	["20160516"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 5,
+		["Month"] = 4,
+		["VipLv"] = 7,
+		["VipMultiple"] = 2
+	},
+	["20160517"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160518"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 150,
+		["Month"] = 4,
+		["VipLv"] = 8,
+		["VipMultiple"] = 2
+	},
+	["20160519"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 238888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160520"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 3,
+		["Month"] = 4,
+		["VipLv"] = 9,
+		["VipMultiple"] = 2
+	},
+	["20160521"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 6,
+		["Month"] = 4,
+		["VipLv"] = 10,
+		["VipMultiple"] = 2
+	},
+	["20160522"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[2]],
+		["ItemNum"] = 888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160523"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 180,
+		["Month"] = 4,
+		["VipLv"] = 10,
+		["VipMultiple"] = 2
+	},
+	["20160524"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[1]],
+		["ItemNum"] = 288888,
+		["Month"] = 4,
+		["VipLv"] = nil,
+		["VipMultiple"] = nil
+	},
+	["20160525"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 4,
+		["Month"] = 4,
+		["VipLv"] = 11,
+		["VipMultiple"] = 2
+	},
+	["20160526"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 7,
+		["Month"] = 4,
+		["VipLv"] = 12,
+		["VipMultiple"] = 2
+	},
+	["20160527"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40005]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 13,
+		["VipMultiple"] = 2
+	},
+	["20160528"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[9]],
+		["ItemNum"] = 210,
+		["Month"] = 4,
+		["VipLv"] = 13,
+		["VipMultiple"] = 2
+	},
+	["20160529"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40006]],
+		["ItemNum"] = 1,
+		["Month"] = 4,
+		["VipLv"] = 14,
+		["VipMultiple"] = 2
+	},
+	["20160530"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[10015]],
+		["ItemNum"] = 5,
+		["Month"] = 4,
+		["VipLv"] = 15,
+		["VipMultiple"] = 2
+	},
+	["20160531"] = 
+	{
+		["HeroID"] = nil,
+		["ItemID"] = [[40003]],
+		["ItemNum"] = 8,
+		["Month"] = 3,
+		["VipLv"] = 15,
+		["VipMultiple"] = 2
+	}
+}
+return Register

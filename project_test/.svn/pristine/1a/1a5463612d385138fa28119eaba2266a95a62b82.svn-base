@@ -1,0 +1,117 @@
+local UnionFindLayer = class("UnionFindLayer",function ()
+	return display.newNode()
+end)
+
+local nameInput = "Union_Name.png"
+local iconInput = "Union_Icon.png"
+local listImage = "union_list_bg.png"
+local barImage = "union_bar.png"
+
+function UnionFindLayer:ctor()
+	self:initData()
+    self:initView()
+end
+
+function UnionFindLayer:initData()
+	self.unionName = ""
+end
+
+function UnionFindLayer:initView()
+    display.newTTFLabel({text = "公会ID：",color = CommonView.color_black(), size=22}):pos(260, 390):addTo(self)
+
+    self:createEditBox()
+
+    CommonButton.yellow("查找")
+	:onButtonClicked(function ( )
+		self:showFindResult()
+	end)
+	:pos(660, 390)
+	:addTo(self)
+
+    self.listView = cc.TableView:create(cc.size(660,120))
+	self.listView:setPosition(100,220)
+	self.listView:setDirection(cc.SCROLLVIEW_DIRECTION_VERTICAL)
+	self.listView:setVerticalFillOrder(cc.TABLEVIEW_FILL_TOPDOWN)
+    self.listView:setDelegate()
+
+    self.listView:registerScriptHandler(handler(self, self.scrollViewDidScroll), 0)
+    self.listView:registerScriptHandler(handler(self, self.tableCellTouched), cc.TABLECELL_TOUCHED)
+	self.listView:registerScriptHandler(handler(self, self.cellSizeForTable), cc.TABLECELL_SIZE_FOR_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.tableCellAtIndex), cc.TABLECELL_SIZE_AT_INDEX)
+    self.listView:registerScriptHandler(handler(self, self.numberOfCellsInTableView), cc.NUMBER_OF_CELLS_IN_TABLEVIEW)
+    self.listView:reloadData()
+
+	self:addChild(self.listView)
+end
+
+function UnionFindLayer:scrollViewDidScroll(table)
+
+end
+
+function UnionFindLayer:tableCellTouched(table,cell)
+	print("cellIdx:"..cell:getIdx())
+end
+
+function UnionFindLayer:cellSizeForTable(table,idx)
+	return 100
+end
+
+function UnionFindLayer:tableCellAtIndex(table,idx)
+	return self:createCell(idx)
+end
+
+function UnionFindLayer:numberOfCellsInTableView(table)
+	return 1
+end
+
+function UnionFindLayer:createCell(idx)
+	local cell = cc.TableViewCell:new()
+	cell:setIdx(idx)
+
+    local bgSprite = display.newSprite(listImage)
+    bgSprite:setAnchorPoint(0,0)
+    cell:addChild(bgSprite)
+
+    return cell
+end
+
+function UnionFindLayer:createEditBox()
+
+	local function onEdit(event, editbox)
+	    if event == "began" then
+	    elseif event == "changed" then
+	        local _text = editbox:getText()
+	        self.unionName = _text
+
+			local _trimed = string.trim(_text)
+			_trimed = parseString(_trimed, 12, 2)
+			if _trimed ~= _text then
+			    editbox:setText(_trimed)
+			end
+	    elseif event == "ended" then
+	    elseif event == "return" then
+	    end
+	end
+
+	local textBack = display.newScale9Sprite(nameInput)
+	-- textBack:setOpacity(100)
+	self.textName = cc.ui.UIInput.new({
+	    UIInputType = 1,
+	    image = textBack,
+	    size = cc.size(250, 35),
+	   	x = 80,
+	    y = 80,
+	    listener = onEdit,
+	}):addTo(self,0)
+	:pos(430,390)
+	:align(display.CENTER)
+	self.textName:setPlaceHolder("在此输入查找的公会ID")
+	self.textName:setMaxLength(10)
+end
+
+function UnionFindLayer:showFindResult()
+    -- 发送查找请求
+    print(self.unionName)
+end
+
+return UnionFindLayer

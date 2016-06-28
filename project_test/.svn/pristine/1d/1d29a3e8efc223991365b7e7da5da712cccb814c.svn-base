@@ -1,0 +1,132 @@
+--[[
+	老虎机活动
+--]]
+local TigerLayer = class("TigerLayer",function()
+	return display.newNode()
+end)
+local boardImage = "Tiger_Board.png"
+local btnFive = "Pay_Five.png"
+local btnFiveSelect = "Pay_Five_Select.png"
+local btnOne = "Pay_One.png"
+local btnOneSelect = "Pay_One_Select.png"
+local discOne = "DiscOne.png"
+local discTwo = "DiscTwo.png"
+local lightRing = "LightRing.png"
+
+
+function TigerLayer:ctor()
+    self.movePos = 1
+	self:initView()
+	self:addNodeEventListener(cc.NODE_EVENT,function (event)
+		if event.name == "enter" then
+			self:onEnter()
+		elseif event.name == "exit" then
+			self:onExit()
+		end
+	end)
+end
+
+
+function TigerLayer:initView()
+	-- 灰层背景
+	CommonView.blackLayer2()
+    :addTo(self)
+
+    --底板
+    self.board = display.newSprite(boardImage)
+    :addTo(self)
+    :pos(display.cx,display.cy)
+
+    -- 关闭按钮
+	CommonButton.close():addTo(self.board):pos(862,525)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close()
+		self:removeFromParent()
+	end)
+
+    --购买五次按钮
+    local btnFive = cc.ui.UIPushButton.new({normal = btnFive,pressed = btnFiveSelect})
+    :addTo(self.board)
+    :pos(695,75)
+    :onButtonClicked(function ()
+    	print("购买5次")
+    end)
+    --购买一次
+    self.btnOne = cc.ui.UIPushButton.new({normal = btnOne,pressed = btnOneSelect}, options)
+    :addTo(self.board)
+    :pos(440,75)
+    :onButtonClicked(function ()
+        self.btnOne:setTouchEnabled(false)
+    	print("购买1次")
+    --光圈动画
+    self:playLightRing()
+    end)
+    --2折
+    display.newSprite(discTwo)
+    :addTo(btnFive)
+    :pos(-76,7)
+    --一折
+    display.newSprite(discOne)
+    :addTo(self.btnOne)
+    :pos(-91,8)
+    --光圈
+    self.lightRing = display.newSprite(lightRing)
+    :addTo(self.board)
+    :pos(359,372)
+
+end
+
+function TigerLayer:playLightRing()
+    local x_ = 0
+    local y_ = 0
+    local time_ = 0.01
+    if self.movePos < 13 then
+        time_ = 0.12 - (self.movePos-1) * 0.01
+    end
+    local pos = math.mod(self.movePos,12)
+    if pos < 5 and pos > 0 then
+        x_ = 103
+        y_ = 0
+    elseif pos < 7 and pos >= 5 then
+        x_ = 0
+        y_ = -103
+    elseif pos < 11 and pos >= 7 then
+        x_ = -103
+        y_ = 0
+    else
+        x_ = 0
+        y_ = 103
+    end
+    transition.moveBy(self.lightRing,{x = x_, y = y_ , time = time_ , onComplete = function ()
+        self.movePos = self.movePos + 1
+        self:playLightRing()
+    end})
+    
+        -- local seq = transition.sequence({
+        --     cc.MoveBy:create(0.3,cc.p(410,0)),
+        --     cc.MoveBy:create(0.2,cc.p(0,-205)),
+        --     cc.MoveBy:create(0.05,cc.p(-410,0)),
+        --     cc.MoveBy:create(0.05,cc.p(0,205)),
+        -- })
+        -- local seq2 = transition.sequence({
+        --     cc.MoveBy:create(0.04,cc.p(410,0)),
+        --     cc.MoveBy:create(0.05,cc.p(0,-205)),
+        --     cc.MoveBy:create(0.04,cc.p(-410,0)),
+        --     cc.MoveBy:create(0.05,cc.p(0,205)),
+        -- })
+        -- local seq3 = transition.sequence({seq,seq2,seq2,seq2,seq2,seq2})
+        -- transition.execute(self.lightRing,seq3,{onComplete = function ()
+        --     self.btnOne:setTouchEnabled(true)
+
+        -- end})
+end
+
+function TigerLayer:onEnter()
+	CommonView.animation_show_out(self.board)
+end
+
+function TigerLayer:onExit()
+end
+
+return TigerLayer

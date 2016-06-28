@@ -1,0 +1,1897 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"updatevi",
+				"updateView()	RankingSystemScene"
+			],
+			[
+				"addite",
+				"addItems(count, getItemFunc)	ListView"
+			],
+			[
+				"removea",
+				"removeAllItems()	ListView"
+			],
+			[
+				"el",
+				"else	else"
+			],
+			[
+				"for",
+				"for	for i=1,10"
+			],
+			[
+				"time",
+				"time_	."
+			],
+			[
+				"section",
+				"subSections	."
+			],
+			[
+				"show",
+				"show()	Node"
+			],
+			[
+				"fo",
+				"fori	for i,v in ipairs()"
+			],
+			[
+				"color_w",
+				"color_white()	color_white"
+			],
+			[
+				"setSca",
+				"setScaleX(scaleX)	Node"
+			],
+			[
+				"siz",
+				"size2	."
+			],
+			[
+				"sche",
+				"schedule(callback, interval)	Node"
+			],
+			[
+				"ArenaLooking",
+				"ArenaLookingReadyScene	."
+			],
+			[
+				"fun",
+				"fun	function"
+			],
+			[
+				"functio",
+				"function	function"
+			],
+			[
+				"f",
+				"fori	for i,v in ipairs()"
+			],
+			[
+				"addRedPoint",
+				"addRedPointForButton"
+			],
+			[
+				"showMove",
+				"showMoveR2L"
+			],
+			[
+				"getPosition",
+				"CCNode_getPositionX()"
+			],
+			[
+				"autorelea",
+				"CCNode_autorelease()"
+			],
+			[
+				"addItems",
+				"addItemsWithKey"
+			],
+			[
+				"难度II",
+				"难度III"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ig",
+				"ignoreAnchorPointForPosition(ignore)	Node"
+			],
+			[
+				"disp",
+				"display.cy	."
+			],
+			[
+				"asset",
+				"assert(v[,message])"
+			],
+			[
+				"check",
+				"checkint(value)	."
+			],
+			[
+				"re",
+				"reset()	GLProgram"
+			],
+			[
+				"dis",
+				"display.cx	."
+			],
+			[
+				"rel",
+				"release()	Ref"
+			],
+			[
+				"display",
+				"display.cy	."
+			],
+			[
+				"getscal",
+				"getScaleX()	Node"
+			],
+			[
+				"setsca",
+				"setScaleX(scaleX)	Node"
+			],
+			[
+				"load",
+				"loadData()	GameData"
+			],
+			[
+				"Memberbu",
+				"MemberButtonGroup	."
+			],
+			[
+				"MemberButt",
+				"MemberButtonGroup	."
+			],
+			[
+				"mem",
+				"memberId	."
+			],
+			[
+				"doDe",
+				"doDamage(attacker, damage, isCrit, isChangeState)	RoleNode"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"getPos",
+				"getPositionY()	UIStretch"
+			],
+			[
+				"wor",
+				"wordPowerup	."
+			],
+			[
+				"rect",
+				"rect()	MenuItem"
+			],
+			[
+				"rol",
+				"roles	."
+			],
+			[
+				"removech",
+				"removeAllChildren()	Node"
+			],
+			[
+				"getposi",
+				"getPositionX()	UILayout"
+			],
+			[
+				"resetp",
+				"resetProperty()	CharacterModel"
+			],
+			[
+				"pau",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"Scal",
+				"ScaleTo	."
+			],
+			[
+				"setPer",
+				"setPercentage(percentage)	ProgressTimer"
+			],
+			[
+				"onLeader",
+				"onLeaderUpdateAnger(role, anger, maxAnger)	BattleHubLayer"
+			],
+			[
+				"setan",
+				"setAnchorPoint(ap)	UILayout"
+			],
+			[
+				"setz",
+				"setGlobalZOrder(globalZOrder)	Node"
+			],
+			[
+				"setAni",
+				"setAnchorPoint(ap)	UILayout"
+			],
+			[
+				"dist",
+				"display.c_top	."
+			],
+			[
+				"buffNode",
+				"buffNodeBottom"
+			],
+			[
+				"leaderB",
+				"leaderBar"
+			],
+			[
+				"eve",
+				"evolveNode	."
+			],
+			[
+				"resu",
+				"resumeAll()	RoleNode"
+			],
+			[
+				"print",
+				"print(···)"
+			],
+			[
+				"onev",
+				"onEvolutionEFFECTEnd(event)	BattleScene"
+			],
+			[
+				"onevolution",
+				"onEvolutionEffectEnd(event)	BattleScene"
+			],
+			[
+				"oneev",
+				"onEvolutionBegin(event)	BattleScene"
+			],
+			[
+				"pa",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"format",
+				"string.format(formatstring,···)"
+			],
+			[
+				"removeCh",
+				"removeChildByTag(tag, cleanup)	Node"
+			],
+			[
+				"buff",
+				"bufftype	."
+			],
+			[
+				"getChil",
+				"getChildByTag(tag)	Node"
+			],
+			[
+				"forma",
+				"string.format(formatstring,···)"
+			],
+			[
+				"addBuff",
+				"addBuff(buffId, level, attacker)	BuffManager"
+			],
+			[
+				"pausea",
+				"pauseAllRunningActions()	ActionManager"
+			],
+			[
+				"scale",
+				"scaleTo(time, scale)	Node"
+			],
+			[
+				"Repeat",
+				"Repeat:create(action, times)	."
+			],
+			[
+				"Skillbu",
+				"SkillButton	."
+			],
+			[
+				"h",
+				"height	."
+			],
+			[
+				"Dodge",
+				"DodgeDeBuff	."
+			],
+			[
+				"Def",
+				"DefenseDeBuff	."
+			],
+			[
+				"doRev",
+				"doRecover(hp)	RoleNode"
+			],
+			[
+				"Buff",
+				"BuffBase	."
+			],
+			[
+				"BUFF",
+				"BuffManager	."
+			],
+			[
+				"pauseA",
+				"pauseAll()	RoleNode"
+			],
+			[
+				"paus",
+				"pause()	Node"
+			],
+			[
+				"pause",
+				"pause()	Node"
+			],
+			[
+				"addevent",
+				"addEventListener(eventName, listener, tag)	EventProtocol"
+			],
+			[
+				"skill",
+				"self.skillId	."
+			],
+			[
+				"setContentsize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"new",
+				"new(...)"
+			],
+			[
+				"Skillbutton",
+				"SkillButtonGroup	."
+			],
+			[
+				"SkillBut",
+				"SkillButtonGroup	."
+			],
+			[
+				"find",
+				"findRolesInSkillRange(skillId)	RoleNode"
+			],
+			[
+				"getSkillby",
+				"getSkillById(skillId)	SkillManager"
+			],
+			[
+				"attack",
+				"attackEffectNum	."
+			],
+			[
+				"getSkill",
+				"getSkillById(skillId)	SkillManager"
+			],
+			[
+				"releaseski",
+				"releaseSkillById(skill)	SkillManager"
+			],
+			[
+				"attackeff",
+				"attackEffectNum	."
+			],
+			[
+				"stopAllSt",
+				"stopAllActions()	Node"
+			],
+			[
+				"De",
+				"DelayTime	."
+			],
+			[
+				"Fead",
+				"FadeOut:create(d)	."
+			],
+			[
+				"getContent",
+				"getContentSize()	Node"
+			],
+			[
+				"setVi",
+				"setVisible(visible)	Mesh"
+			],
+			[
+				"setContentSize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"cov",
+				"convertToWorldSpace(nodePoint)	Node"
+			],
+			[
+				"setContenSize",
+				"setRootContainerSize(rootContainerSize)	CCBAnimationManager"
+			],
+			[
+				"displ",
+				"display.cx	."
+			],
+			[
+				"size",
+				"size(width, height)	Node"
+			],
+			[
+				"abs",
+				"math.abs(x)"
+			],
+			[
+				"function",
+				"function	function"
+			],
+			[
+				"getposition",
+				"getPositionX()	Node"
+			],
+			[
+				"setFlip",
+				"setFlippedX(flippedX)	Sprite"
+			],
+			[
+				"attacke",
+				"attackEffectNum	."
+			],
+			[
+				"getEne",
+				"getEnemiesTotalByWave(wave)	BattleLogic"
+			],
+			[
+				"waveE",
+				"waveEnemies"
+			],
+			[
+				"Batt",
+				"BattleCustom	."
+			],
+			[
+				"anim",
+				"animation	."
+			],
+			[
+				"addSprite",
+				"addSpriteFrameWithFile(filename)	Animation"
+			],
+			[
+				"Anim",
+				"Animation	."
+			],
+			[
+				"setMi",
+				"setMidpoint(point)	ProgressTimer"
+			],
+			[
+				"setpre",
+				"setPercentage(percentage)	ProgressTimer"
+			],
+			[
+				"printf",
+				"printInfo(fmt, ...)	."
+			],
+			[
+				"math",
+				"math.newrandomseed()	."
+			],
+			[
+				"getNode",
+				"getNodeRect()	RoleNode"
+			],
+			[
+				"Ene",
+				"EnemyNode	."
+			],
+			[
+				"di",
+				"display.width	."
+			],
+			[
+				"setPosio",
+				"setPosition(position)	Twirl"
+			],
+			[
+				"max",
+				"math.max(x,···)"
+			],
+			[
+				"setp",
+				"setPosition(position)	Twirl"
+			],
+			[
+				"setAn",
+				"setAnchorPoint(ap)	UIStretch"
+			],
+			[
+				"state",
+				"self.stateMgr	."
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app/data/GameConstant.lua",
+			"settings":
+			{
+				"buffer_size": 469,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config.lua",
+			"settings":
+			{
+				"buffer_size": 614,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/scenes/MainScene.lua",
+			"settings":
+			{
+				"buffer_size": 5703,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/views/chat/ChatLeftView.lua",
+			"settings":
+			{
+				"buffer_size": 5191,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/views/chat/ChatLayer.lua",
+			"settings":
+			{
+				"buffer_size": 15151,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/views/chat/ChatSetView.lua",
+			"settings":
+			{
+				"buffer_size": 4764,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/data/ChatModel.lua",
+			"settings":
+			{
+				"buffer_size": 454,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/data/ChatData.lua",
+			"settings":
+			{
+				"buffer_size": 1067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/views/chat/ChatExpressView.lua",
+			"settings":
+			{
+				"buffer_size": 2513,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: function"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 51.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/framework/cc/ui/UIInput.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/SummonScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/config/Vip.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/UIInputEx.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/TalkLabel.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/ListView.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/RecieveChatMsgResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/Grid.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/main/MainLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/framework/scheduler.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/UserData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/MainScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/hero/SkillDesLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/hero/HeroAbilityLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/chat/ChatExpressView.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/CommonButton.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/activity/OpenActivityLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/config/union_icon.lua",
+		"/Users/yangjianbao/Downloads/《变身英雄》公会系统.doc",
+		"/Users/yangjianbao/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/ArenaScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ArenaTeam.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/MyApp.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/config.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GameConstant.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/guide/GuideNode.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GuideData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/MissionScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/PlayerSetScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/ArenaDefenseScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TailsBeastScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialMountReadyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialLightReadyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialHouseReadyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TailsSealScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TailsScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/MailboxScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/HolyLandScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/OpenScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GameData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/guide/node/GuideAincrad.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/guide/GuideManager.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/SceneData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/scenevisitor/ShopAincradVisitor.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ResetTimeData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/scenevisitor/ShopBaseVisitor.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/SceneElement.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/SceneVisitor.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/scenevisitor/MailVisitor.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/battle/node/RoleNode.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/battle/model/RoleModel.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/config/Hero.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/SwordRankingLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/TeamLvRankingLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/RankingSystemScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/StageStarRankingLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/RankData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/CommonRankingShowResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/activity/ActivityRankingLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/activity/SwordActivityLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/NormalActivityScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/AincradRankingShowResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/arena/ArenaRankLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/AincradRankLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/TeamInfoLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/request/AincradRankingShowProcess.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/RankingShowResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/request/RankingShowProcess.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/MaillGetListResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/config/CardSecretInfo.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GameMail.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/framework/cc/components/behavior/StateMachine.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/MailReadResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/rank/AincradRankingGrid.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/RotateGrid.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/RotateItem.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/NodeEx.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/TouchNode.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/framework/shortcodes.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradSelectBuffScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/SelectAincradBuffResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/request/SelectAincradBuffProcess.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/AincradBuffData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GameAincradBuff.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/PlayerData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/arena/RankGrid.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/GetAincradRewardResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradSelectEnemyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ActivityDataBase.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradReadyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/Common.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ActivityUtil.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/ResetAincradResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/AincradData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/SaveAincradBattleResultResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TreeReadyScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/readyplay/TreeSelectLayer.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/EndTreeWorldAndRewardResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/SaveTreeWorldGuankaResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ActivityNormalData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ActivityGameNormal.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/ActivityGameBase.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/TreeData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/TaskData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/CommonView.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/HolyLandSubScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialMountScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialHouseScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialLightScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/aincrad/AincradBackground.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradGetRewardScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/TrialHouseInfoScene.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/OpenAincradResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/NumberData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/views/aincrad/AincradButton.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/ui/base/SceneEx.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/UpHeroSkillLevelResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/OpenAincradBoxResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/scenes/AincradMaoScene.lua",
+		"/Users/yangjianbao/Documents/excel/Json2Lua/JsonToLua.py",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/net/response/OpenTrialsResponse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/scenevisitor/HolyLandVisitor.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/GameHouse.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/data/TrialData.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/config/LoadConfig.lua",
+		"/Users/yangjianbao/Documents/quick_project/hahahero/src/app/util/scenevisitor/PowerVisitor.lua"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"static const int CC_EDIT_BOX_PADDING = 5;",
+			"static const int CC_EDIT_BOX_PADDING = 5",
+			"static const int CC_EDIT_BOX_PADDING = 5;",
+			"math",
+			"TextField",
+			"textfieldCls",
+			"width",
+			"setinputw",
+			"updateChatLeftView",
+			"msg:getLines()",
+			"listView",
+			"addListItem",
+			"print",
+			"unionData",
+			"worldData",
+			"addli",
+			"listView",
+			"self.showData",
+			"chatLeftView",
+			"updateData",
+			"ChatSetView",
+			"updateChooseState",
+			"isChoose",
+			"self.isChoose\nself.isChoose",
+			"self.isChoose",
+			"Userdata",
+			"self.choose",
+			"self.chooseBtn",
+			"sectioninde",
+			"subsection",
+			"updateChooseState",
+			"self.isChoose",
+			"updateSendBtn",
+			"selectedChannel",
+			"selectedButtonAtIndex_",
+			"self.schedule",
+			"Userdata",
+			"createBackground",
+			"getContentSize",
+			"setBtnsEnabled",
+			"createBannerView",
+			"menuNode",
+			"createAbilityLabel",
+			"talklabel",
+			"updatedata",
+			"updateView",
+			"module",
+			"self.btnGroup_",
+			"selectedChannel",
+			"self.btnGroup_",
+			"sysData",
+			"6\n6\nChatData",
+			"6\n",
+			"updateView",
+			"updatevier",
+			"find_selected_text",
+			"shift_tab_unindent",
+			"auto_complete_selector",
+			"BUTTON_EXPRESS",
+			"self.btnGroup_",
+			"chatmsg_",
+			"self.chatMsg",
+			"\\",
+			"self.textfield",
+			"textfield",
+			"hide",
+			"textfield",
+			"ave_on_focus_lost",
+			":getBattle()",
+			"getbat",
+			"ShopAincrad",
+			"sceneda",
+			"self.data",
+			"orderName",
+			"ActivityRankingLayer",
+			"requ",
+			"orderName",
+			"StageStarRankingLayer",
+			"NetHandler.request(\"RankingShow\", {",
+			"battle",
+			"netRank",
+			"indexof",
+			"reque",
+			"showToast",
+			"20033",
+			"[\"CardScore\"]",
+			"netRank",
+			"requ",
+			"Idolum",
+			"Idolum_Ex",
+			"slider",
+			"slider_",
+			"setProgress",
+			"slider_",
+			"self.slider_",
+			"进度",
+			"onTouch_",
+			"test",
+			"items_",
+			"new",
+			"color",
+			"listView_",
+			"idx_",
+			"canMove_",
+			"onEvent",
+			"listView_",
+			"homeItems",
+			"self.idx_",
+			"homeItems",
+			"scheduleTimes",
+			"addAngle",
+			"onEvent",
+			"toAngle",
+			"canMove_",
+			"getNear",
+			"isAlive",
+			"nShakeVal",
+			"isShake",
+			"onTouch_",
+			":onTouch(fun",
+			"NODE_TOUCH_EVENT",
+			"scale",
+			"sche",
+			"requ",
+			"战力",
+			"RankGrid",
+			"requ",
+			"20015"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"AincradRankingGrid",
+			"self",
+			"PowerVisitor",
+			"-count",
+			"uid",
+			"coinCount",
+			"TalkLabel",
+			"desLabel",
+			"titleLabel",
+			"desLabe2",
+			"base.Label.new({text=\"",
+			"function",
+			"--",
+			"",
+			"createNormalImage()",
+			"20",
+			"createSelectedImage()",
+			"btnSelectedImage",
+			"btnNormalImage",
+			"StageStarRankingLayer",
+			"SwordRankingLayer",
+			"TeamLvRankingLayer",
+			"RankingGrid",
+			"TeamInfoLayer",
+			"RankingSystemScene",
+			"SwordActivityLayer",
+			"SwordActivityData",
+			"SwordAwardLayer",
+			"MikuIntroductionLayer",
+			"SwordAwardLayer",
+			"ActivityRankingLayer",
+			"ActivityRuleLayer",
+			"AincradRuleLayer",
+			"AincradRankLayer",
+			"AincradStarWidgetLayer",
+			"AincradScoreWidgetLayer",
+			", --",
+			"",
+			"LookingForSelectLayer",
+			"WantedVisitor",
+			"ArenaLookingReadyScene",
+			"30,",
+			"150",
+			"ActivityNormalData",
+			"",
+			"ActivityOpenData",
+			"ActivityGameBase",
+			"ActivityBaseData",
+			"okParam2[1]",
+			"okParam1[1]",
+			"TrialMountInfoScene",
+			"TrialHouseInfoScene",
+			"\\n小",
+			"",
+			"HolyLandInfoSubScene",
+			"ShopAincradVisitor",
+			"ShopAincradScene",
+			"-- print",
+			"print",
+			"--print",
+			"event",
+			"UpdateResource",
+			"UpdateBase",
+			"",
+			"GridView",
+			"TableNode",
+			"GridView",
+			"GuideTaskDaily",
+			"showToast",
+			"GridNode",
+			"GridItem",
+			"CommonView.background_aincrad()",
+			"CommonView.blackLayer3()",
+			"CommonButton.start()",
+			"TableView",
+			"HolyLandSubScene",
+			"HolyLandScene",
+			"HolyLandVisitor",
+			"TailsVisitor",
+			"MailVisitor",
+			"ShopScoreVisitor",
+			"ShopArenaVisitor",
+			"ShopTreeVisitor",
+			"ShopNormalVisitor",
+			"CityVisitor",
+			"TreeVisitor",
+			"AincradVisitor",
+			"ArenaVisitor",
+			"CardVisitor",
+			"GoldVisitor",
+			"function MainVisitor:toScene(totype)\n	self:toScene_(\"MainScene\", totype)\nend",
+			"HeroListVisitor",
+			"ExpModeVisitor",
+			"StageVisitor",
+			"StageEliteVisitor",
+			"ChapterVisitor",
+			"StageNormalVisitor",
+			"MainVisitor",
+			"GuideWater",
+			"GuideCity",
+			"GuideTailsTwo",
+			"GuideTails",
+			"LinkList",
+			"StateNode",
+			"StageNode",
+			"TouchNode",
+			"SelectLayer",
+			"backgroundFrame1",
+			"ShopScene",
+			"mFrame1",
+			"long_yellow",
+			"CommonButton.yellow",
+			"CommonButton.orange",
+			"self:performWithDelay",
+			"self:isElite()",
+			"cfg.",
+			"CityInfoScene",
+			"CityScene",
+			"ShopTreeScene",
+			"TreeAwardLayer",
+			"addHeroPos",
+			"TreeReadyScene",
+			"TreeSelectLayer",
+			"v",
+			"),",
+			"v",
+			"k",
+			"serverData."
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/data/GameConstant.lua",
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								111
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/config.lua",
+					"settings":
+					{
+						"buffer_size": 614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/app/scenes/MainScene.lua",
+					"settings":
+					{
+						"buffer_size": 5703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2767,
+								2767
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/app/views/chat/ChatLeftView.lua",
+					"settings":
+					{
+						"buffer_size": 5191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3572,
+								3575
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/views/chat/ChatLayer.lua",
+					"settings":
+					{
+						"buffer_size": 15151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4674,
+								4674
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2727.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/app/views/chat/ChatSetView.lua",
+					"settings":
+					{
+						"buffer_size": 4764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4324,
+								4324
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/app/data/ChatModel.lua",
+					"settings":
+					{
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/app/data/ChatData.lua",
+					"settings":
+					{
+						"buffer_size": 1067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								537,
+								537
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/app/views/chat/ChatExpressView.lua",
+					"settings":
+					{
+						"buffer_size": 2513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 267.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"summon",
+				"src/app/scenes/SummonScene.lua"
+			],
+			[
+				"ccuii",
+				"src/framework/cc/ui/UIInput.lua"
+			],
+			[
+				"vip",
+				"src/app/config/Vip.lua"
+			],
+			[
+				"uiinput",
+				"src/app/ui/base/UIInputEx.lua"
+			],
+			[
+				"talk",
+				"src/app/ui/base/TalkLabel.lua"
+			],
+			[
+				"talkl",
+				"src/app/ui/base/TalkLabel.lua"
+			],
+			[
+				"listvi",
+				"src/app/ui/base/ListView.lua"
+			],
+			[
+				"listview",
+				"src/app/ui/base/ListView.lua"
+			],
+			[
+				"grid",
+				"src/app/ui/base/Grid.lua"
+			],
+			[
+				"rec",
+				"src/app/net/response/RecieveChatMsgResponse.lua"
+			],
+			[
+				"userda",
+				"src/app/data/UserData.lua"
+			],
+			[
+				"sche",
+				"src/framework/scheduler.lua"
+			],
+			[
+				"mainl",
+				"src/app/views/main/MainLayer.lua"
+			],
+			[
+				"mains",
+				"src/app/scenes/MainScene.lua"
+			],
+			[
+				"skilld",
+				"src/app/views/hero/SkillDesLayer.lua"
+			],
+			[
+				"chatexp",
+				"src/app/views/chat/ChatExpressView.lua"
+			],
+			[
+				"openac",
+				"src/app/views/activity/OpenActivityLayer.lua"
+			],
+			[
+				"unionicon",
+				"src/app/config/union_icon.lua"
+			],
+			[
+				"chatd",
+				"src/app/data/ChatData.lua"
+			],
+			[
+				"chat",
+				"src/app/data/ChatModel.lua"
+			],
+			[
+				"chatl",
+				"src/app/views/chat/ChatLeftView.lua"
+			],
+			[
+				"mainsc",
+				"src/app/scenes/MainScene.lua"
+			],
+			[
+				"gamec",
+				"src/app/data/GameConstant.lua"
+			],
+			[
+				"mya",
+				"src/app/MyApp.lua"
+			],
+			[
+				"gamecon",
+				"src/app/data/GameConstant.lua"
+			],
+			[
+				"arenate",
+				"src/app/data/ArenaTeam.lua"
+			],
+			[
+				"arenasce",
+				"src/app/scenes/ArenaScene.lua"
+			],
+			[
+				"conf",
+				"src/config.lua"
+			],
+			[
+				"guideda",
+				"src/app/data/GuideData.lua"
+			],
+			[
+				"guidemanager",
+				"src/app/util/guide/GuideManager.lua"
+			],
+			[
+				"sceneda",
+				"src/app/data/SceneData.lua"
+			],
+			[
+				"shopain",
+				"src/app/util/scenevisitor/ShopAincradVisitor.lua"
+			],
+			[
+				"sceneel",
+				"src/app/ui/base/SceneElement.lua"
+			],
+			[
+				"hero",
+				"src/app/config/Hero.lua"
+			],
+			[
+				"rolemo",
+				"src/app/battle/model/RoleModel.lua"
+			],
+			[
+				"roleno",
+				"src/app/battle/node/RoleNode.lua"
+			],
+			[
+				"stagestarrankinglayer",
+				"src/app/views/rank/StageStarRankingLayer.lua"
+			],
+			[
+				"swordrankinglayer",
+				"src/app/views/rank/SwordRankingLayer.lua"
+			],
+			[
+				"teamlvrankinglayer",
+				"src/app/views/rank/TeamLvRankingLayer.lua"
+			],
+			[
+				"rankda",
+				"src/app/data/RankData.lua"
+			],
+			[
+				"commonra",
+				"src/app/net/response/CommonRankingShowResponse.lua"
+			],
+			[
+				"arenasc",
+				"src/app/scenes/ArenaScene.lua"
+			],
+			[
+				"stagesta",
+				"src/app/views/rank/StageStarRankingLayer.lua"
+			],
+			[
+				"activityrankinglayer",
+				"src/app/views/activity/ActivityRankingLayer.lua"
+			],
+			[
+				"sworda",
+				"src/app/views/activity/SwordActivityLayer.lua"
+			],
+			[
+				"ranklayer",
+				"src/app/views/rank/TeamInfoLayer.lua"
+			],
+			[
+				"rankdata",
+				"src/app/data/RankData.lua"
+			],
+			[
+				"arenaranklayer",
+				"src/app/views/arena/ArenaRankLayer.lua"
+			],
+			[
+				"aincradranking",
+				"src/app/net/request/AincradRankingShowProcess.lua"
+			],
+			[
+				"rankingsho",
+				"src/app/net/request/RankingShowProcess.lua"
+			],
+			[
+				"aincradsc",
+				"src/app/scenes/AincradScene.lua"
+			],
+			[
+				"arenas",
+				"src/app/scenes/ArenaScene.lua"
+			],
+			[
+				"arenarankre",
+				"src/app/net/response/AincradRankingShowResponse.lua"
+			],
+			[
+				"commonre",
+				"src/app/net/response/CommonRankingShowResponse.lua"
+			],
+			[
+				"cardse",
+				"src/app/config/CardSecretInfo.lua"
+			],
+			[
+				"gamemai",
+				"src/app/data/GameMail.lua"
+			],
+			[
+				"createmail",
+				"src/framework/cc/components/behavior/StateMachine.lua"
+			],
+			[
+				"maillgetlist",
+				"src/app/net/response/MaillGetListResponse.lua"
+			],
+			[
+				"mailv",
+				"src/app/util/scenevisitor/MailVisitor.lua"
+			],
+			[
+				"mailread",
+				"src/app/net/response/MailReadResponse.lua"
+			],
+			[
+				"normal",
+				"src/app/scenes/NormalActivityScene.lua"
+			],
+			[
+				"arenateam",
+				"src/app/data/ArenaTeam.lua"
+			],
+			[
+				"aincradranklayer",
+				"src/app/views/rank/AincradRankLayer.lua"
+			],
+			[
+				"aincradrankinggrid",
+				"src/app/views/rank/AincradRankingGrid.lua"
+			],
+			[
+				"aincradrank",
+				"src/app/net/response/AincradRankingShowResponse.lua"
+			],
+			[
+				"rankingshow",
+				"src/app/net/response/RankingShowResponse.lua"
+			],
+			[
+				"seals",
+				"src/app/scenes/TailsSealScene.lua"
+			],
+			[
+				"tailss",
+				"src/app/scenes/TailsScene.lua"
+			],
+			[
+				"sealsce",
+				"src/app/scenes/TailsSealScene.lua"
+			],
+			[
+				"touchno",
+				"src/app/ui/base/TouchNode.lua"
+			],
+			[
+				"rotatei",
+				"src/app/ui/base/RotateItem.lua"
+			],
+			[
+				"trials",
+				"src/app/scenes/TrialScene.lua"
+			],
+			[
+				"short",
+				"src/framework/shortcodes.lua"
+			],
+			[
+				"nodee",
+				"src/app/ui/base/NodeEx.lua"
+			],
+			[
+				"nor",
+				"src/app/scenes/NormalActivityScene.lua"
+			],
+			[
+				"tailssc",
+				"src/app/scenes/TailsScene.lua"
+			],
+			[
+				"bease",
+				"src/app/scenes/TailsBeastScene.lua"
+			],
+			[
+				"rotate",
+				"src/app/ui/base/RotateGrid.lua"
+			],
+			[
+				"gameaincradbuff",
+				"src/app/data/GameAincradBuff.lua"
+			],
+			[
+				"aincrad",
+				"src/app/data/AincradBuffData.lua"
+			],
+			[
+				"selectaincrdbu",
+				"src/app/net/request/SelectAincradBuffProcess.lua"
+			],
+			[
+				"selectaincradbuff",
+				"src/app/net/response/SelectAincradBuffResponse.lua"
+			],
+			[
+				"aincradselec",
+				"src/app/scenes/AincradSelectBuffScene.lua"
+			],
+			[
+				"rankgrid",
+				"src/app/views/arena/RankGrid.lua"
+			],
+			[
+				"buffsc",
+				"src/app/scenes/AincradSelectBuffScene.lua"
+			],
+			[
+				"databa",
+				"src/app/data/ActivityDataBase.lua"
+			],
+			[
+				"aincradselectbuffscene",
+				"src/app/scenes/AincradSelectBuffScene.lua"
+			],
+			[
+				"aincradready",
+				"src/app/scenes/AincradReadyScene.lua"
+			],
+			[
+				"aincradbf",
+				"src/app/data/GameAincradBuff.lua"
+			],
+			[
+				"aincradd",
+				"src/app/data/AincradData.lua"
+			],
+			[
+				"endtreeworldandreward",
+				"src/app/net/response/EndTreeWorldAndRewardResponse.lua"
+			],
+			[
+				"treeselectlayer",
+				"src/app/views/readyplay/TreeSelectLayer.lua"
+			],
+			[
+				"treerea",
+				"src/app/scenes/TreeReadyScene.lua"
+			],
+			[
+				"saveaincra",
+				"src/app/net/response/SaveAincradBattleResultResponse.lua"
+			],
+			[
+				"aut",
+				"src/app/data/ActivityUtil.lua"
+			],
+			[
+				"reset",
+				"src/app/data/ResetTimeData.lua"
+			],
+			[
+				"common",
+				"src/app/util/Common.lua"
+			],
+			[
+				"activitygamebase",
+				"src/app/data/ActivityGameBase.lua"
+			],
+			[
+				"gamenormal",
+				"src/app/data/ActivityGameNormal.lua"
+			],
+			[
+				"activitydatabase",
+				"src/app/data/ActivityDataBase.lua"
+			],
+			[
+				"activityno",
+				"src/app/data/ActivityNormalData.lua"
+			],
+			[
+				"resetti",
+				"src/app/data/ResetTimeData.lua"
+			],
+			[
+				"playerda",
+				"src/app/data/PlayerData.lua"
+			],
+			[
+				"treed",
+				"src/app/data/TreeData.lua"
+			],
+			[
+				"activida",
+				"src/app/data/ActivityDataBase.lua"
+			],
+			[
+				"normald",
+				"src/app/data/ActivityNormalData.lua"
+			],
+			[
+				"savetree",
+				"src/app/net/response/SaveTreeWorldGuankaResponse.lua"
+			],
+			[
+				"taskda",
+				"src/app/data/TaskData.lua"
+			],
+			[
+				"normala",
+				"src/app/scenes/NormalActivityScene.lua"
+			],
+			[
+				"mounts",
+				"src/app/scenes/TrialMountScene.lua"
+			],
+			[
+				"lightscen",
+				"src/app/scenes/TrialLightScene.lua"
+			],
+			[
+				"aincradbackground",
+				"src/app/views/aincrad/AincradBackground.lua"
+			],
+			[
+				"aincradsce",
+				"src/app/scenes/AincradScene.lua"
+			],
+			[
+				"holylandsubscene",
+				"src/app/scenes/HolyLandSubScene.lua"
+			],
+			[
+				"housesc",
+				"src/app/scenes/TrialHouseScene.lua"
+			],
+			[
+				"houseinfo",
+				"src/app/scenes/TrialHouseInfoScene.lua"
+			],
+			[
+				"commonv",
+				"src/app/util/CommonView.lua"
+			],
+			[
+				"holylands",
+				"src/app/scenes/HolyLandScene.lua"
+			],
+			[
+				"number",
+				"src/app/data/NumberData.lua"
+			],
+			[
+				"aincradread",
+				"src/app/scenes/AincradReadyScene.lua"
+			],
+			[
+				"openaincra",
+				"src/app/net/response/OpenAincradResponse.lua"
+			],
+			[
+				"aincradbatt",
+				"src/app/net/response/SaveAincradBattleResultResponse.lua"
+			],
+			[
+				"trialsce",
+				"src/app/scenes/TrialScene.lua"
+			],
+			[
+				"sceneex",
+				"src/app/ui/base/SceneEx.lua"
+			],
+			[
+				"app",
+				"src/app/MyApp.lua"
+			],
+			[
+				"aicradrea",
+				"src/app/scenes/AincradReadyScene.lua"
+			],
+			[
+				"resetaincrad",
+				"src/app/net/response/ResetAincradResponse.lua"
+			],
+			[
+				"aincradda",
+				"src/app/data/AincradData.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/yangjianbao/Documents/quick_project/hahahero/hahahero.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

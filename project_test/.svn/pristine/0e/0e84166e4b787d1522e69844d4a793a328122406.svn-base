@@ -1,0 +1,54 @@
+--[[
+    公会副本规则
+]]
+
+local UnionInstanceRuleLayer = class("UnionInstanceRuleLayer", function()
+	return display.newColorLayer(cc.c4f(0, 0, 0, 200))
+end)
+local BgImg = "union_rule.png"
+
+function UnionInstanceRuleLayer:ctor()
+	self:initData()
+	self:initView()
+end
+
+function UnionInstanceRuleLayer:initData()
+	self.infoData = "公会副本规则公会副本规则公会副本规则公会副本规则公会副本规则公会副本规则公会副本规则公会副本规则"
+end
+
+function UnionInstanceRuleLayer:initView()
+	self.spriteBg = display.newSprite(BgImg):pos(display.cx-5,display.cy-20):addTo(self)
+
+	-- 关闭按钮
+	CommonButton.close()
+	:addTo(self.spriteBg,3)
+	:pos(360, 445)
+	:scale(0.7)
+	:onButtonClicked(function()
+		CommonSound.close() -- 音效
+		self.delegate:removeRuleLayer()
+	end)
+
+    createOutlineLabel({text = "公会副本规则"}):pos(165, 415):addTo(self.spriteBg)
+
+	-- 规则描述
+	base.Label.new({
+		text = self.infoData,
+		size = 20,
+		dimensions = cc.size(325, 360),
+		align = cc.TEXT_ALIGNMENT_LEFT,
+	})
+	:addTo(self.spriteBg)
+	:pos(15, 380)
+	:align(display.LEFT_TOP)
+end
+
+function UnionInstanceRuleLayer:updateData()
+
+end
+
+function UnionInstanceRuleLayer:updateView()
+
+end
+
+return UnionInstanceRuleLayer

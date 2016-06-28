@@ -1,0 +1,70 @@
+local UnionLayer = class("UnionLayer",function ()
+	return display.newNode()
+end)
+
+local signImg  = "Union_Church.png"
+local hallImg  = "Union_Hall.png"
+local idImg    = "union_id.png"
+local shopImg  = ""
+local fightImg = ""
+local stageImg = ""
+
+function UnionLayer:ctor()
+    self:createStageInfo()
+end
+
+function UnionLayer:createStageInfo()
+
+    local unionIdImg = display.newSprite(idImg):pos(display.cx - 360, display.cy - 170):addTo(self)
+    local des = base.TalkLabel.new({
+                text  = "这里是公告具体内容，这里是公告具体内容，这里是公告具体内容，这里是公告具体内容，这里是公告具体内容，",
+                size  = 18,
+                dimensions = cc.size(150, 0),
+                color = CommonView.color_black()
+            })
+    des:pos(40, 223 - 22*des:getLines())
+    des:addTo(unionIdImg)
+
+    local image_ = {normal = signImg}
+    self.signBtn = CommonButton.yellow3("", {image = image_})
+    :onButtonClicked(function()
+        NetHandler.gameRequest("GetUnionSignInfo")
+    end)
+    :pos(display.cx - 330, display.cy + 150)
+    :addTo(self,3)
+
+    local image_ = {normal = hallImg}
+    self.hallBtn = CommonButton.yellow3("", {image = image_})
+    :onButtonClicked(function()
+        app:pushToScene("UnionHallScene")
+    end)
+    :pos(display.cx + 15, display.cy + 150)
+    :addTo(self,3)
+
+    -- local image_ = {normal = shopImg}
+    -- self.shopBtn = CommonButton.yellow3("", {image = image_})
+    -- :onButtonClicked(function ()
+    --     SceneData:pushScene("ShopUnion", self)
+    -- end)
+    -- :pos(display.cx - 120, display.cy - 110)
+    -- :addTo(self,3)
+
+    -- local image_ = {normal = fightImg}
+    -- self.fightBtn = CommonButton.yellow3("", {image = image_})
+    -- :onButtonClicked(function ()
+    --     print("战争之地...")
+    -- end)
+    -- :pos(display.cx + 280, display.cy - 140)
+    -- :addTo(self,3)
+
+    -- local image_ = {normal = stageImg}
+    -- self.stageBtn = CommonButton.yellow3("", {image = image_})
+    -- :onButtonClicked(function ()
+    --     print("公会副本...")
+    -- end)
+    -- :pos(display.cx + 270, display.cy + 150)
+    -- :addTo(self,3)
+
+end
+
+return UnionLayer

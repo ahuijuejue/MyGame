@@ -1,0 +1,51 @@
+local ChatData = class("ChatData")
+
+function ChatData:ctor()
+	self.sysData   = {}
+	self.worldData = {}
+	self.unionData = {}
+
+    self.setState  = {"1", "1", "1"}
+
+	self.allLeftData   = {} -- 左下角显示全部信息
+	self.sysLeftData   = {} -- 左下角显示系统信息
+	self.worldLeftData = {} -- 左下角显示世界信息
+	self.unionLeftData = {} -- 左下角显示公会信息
+end
+
+--插入聊天数据
+function ChatData:insertData(type_,chatModel)
+
+    table.insert(self.allLeftData, 1, chatModel)
+
+	if type_ == "2" then
+		table.insert(self.sysData, 1, chatModel)
+		table.insert(self.sysLeftData, 1, chatModel)
+	elseif type_ == "3" then
+		table.insert(self.worldData, 1, chatModel)
+		table.insert(self.worldLeftData, 1, chatModel)
+	elseif type_ == "4" then
+		table.insert(self.unionData, 1, chatModel)
+		table.insert(self.unionLeftData, 1, chatModel)
+	end
+end
+
+--删除聊天数据
+function ChatData:cleanData()
+	for i,v in ipairs(self.sysData) do
+		v = nil
+	end
+	self.sysData = {}
+
+	for i,v in ipairs(self.worldData) do
+		v = nil
+	end
+	self.worldData = {}
+
+	for i,v in ipairs(self.unionData) do
+		v = nil
+	end
+	self.unionData = {}
+end
+
+return ChatData

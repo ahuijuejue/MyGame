@@ -1,0 +1,26 @@
+local OnearmBunditResponse = class("OnearmBunditResponse")
+function OnearmBunditResponse:OnearmBunditResponse(data)
+	dump(data)
+	if data.result == 1 then
+		--todo
+		print("商店类型data.param1="..data.param1)
+		print("老虎机奖励序号======="..data.param2)
+		dump(data.param2)
+	else
+
+		print("钱不够data.result=="..data.result)
+	end
+
+end
+function OnearmBunditResponse:ctor()
+	--响应消息号
+	self.order = 30001
+	--返回结果,1:成功,-1:钱不够
+	self.result =  ""
+	--活动类型,1:一次,2:5次
+	self.param1 =  ""
+	--老虎机奖励序号(0-12)
+	self.param2 =  ""	
+end
+
+return OnearmBunditResponse

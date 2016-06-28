@@ -1,0 +1,80 @@
+local AlertLayer = class("AlertLayer",function ()
+	return display.newLayer()
+end)
+
+local NodeBox = import(".NodeBox")
+
+local boxImage = "Friends_Tips.png"
+local redImage1 = "Button_Cancel.png"
+local redImage2 = "Button_Cancel_Light.png"
+local greenImage1 = "Button_Enter.png"
+local greenImage2 = "Button_Enter_Light.png"
+
+function AlertLayer:ctor(title,msg,callback)
+	self:createBox()
+	self:createTitle(title)
+	self:createMessage(msg)
+	self:createButtons(callback)
+end
+
+function AlertLayer:createBox()
+	self.box = display.newSprite(boxImage)
+	self.box:setPosition(display.cx,display.cy)
+	self:addChild(self.box)
+
+	self.size = self.box:getContentSize()
+	self.width = self.size.width
+	self.height = self.size.height
+end
+
+function AlertLayer:createTitle(title)
+	self.title = display.newTTFLabel({text = title, size = 28})
+	self.title:setPosition(self.width/2,self.height-50)
+	self.box:addChild(self.title)
+end	
+
+function AlertLayer:createMessage(msg)
+	self.msg = display.newTTFLabel({
+		text = msg, 
+		size = 22, 
+		align = cc.ui.TEXT_ALIGN_LEFT,
+		dimensions = cc.size(420, 200)})
+	self.msg:setPosition(self.width/2,210)
+	self.msg:setAnchorPoint(0.5,1)
+	self.box:addChild(self.msg)
+end
+
+function AlertLayer:createButtons(callback)
+	callback = callback or {}
+	self.btns = {}
+	if callback.cancel then
+		local param1 = {normal = redImage1, pressed = redImage2}
+		local param2 = {text = GET_TEXT_DATA("TEXT_CANCEL"),size = 20}
+		local cancelBtn = createButtonWithLabel(param1,param2)
+		:onButtonClicked(function ()
+			AudioManage.playSound("Click.mp3")
+			callback.cancel(self)
+		end)
+		table.insert(self.btns,cancelBtn)
+	end
+	if callback.sure then
+		local param1 = {normal = greenImage1, pressed = greenImage2}
+		local param2 = {text = GET_TEXT_DATA("TEXT_SURE"),size = 20}
+		local sureBtn = createButtonWithLabel(param1,param2)
+		:onButtonClicked(function ()
+			AudioManage.playSound("Click.mp3")
+			callback.sure(self)
+		end)
+		table.insert(self.btns,sureBtn)
+	end
+	if #self.btns > 0 then
+		local nodeBox = NodeBox.new()
+	    nodeBox:setPosition(self.width/2,50)
+	    nodeBox:setCellSize(cc.size(220,65))
+	    nodeBox:setUnit(#self.btns)
+		nodeBox:addElement(self.btns)
+		self.box:addChild(nodeBox)
+	end
+end
+
+return AlertLayer

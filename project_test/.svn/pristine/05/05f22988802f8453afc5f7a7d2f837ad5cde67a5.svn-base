@@ -1,0 +1,411 @@
+local WealthLayer = class("WealthLayer",function()
+	return display.newNode()
+end)
+local scheduler = require(cc.PACKAGE_NAME .. ".scheduler")
+local boardImage = "wealthy_board.png"
+local talkImage = "wealth_talk.png"
+local btn1 = "wealth_btn1.png"
+local btn2 = "wealth_btn2.png"
+local lightImage = "wealth_light.png"
+
+function WealthLayer:ctor()
+	self.movePos1 = 1
+	self.movePos2 = 1
+	self.movePos3 = 1
+	self.movePos4 = 1
+	self.movePos5 = 1
+	self.serverNum1 = 5
+	self.serverNum2 = 6
+	self.serverNum3 = 7
+	self.serverNum4 = 8
+	self.serverNum5 = 9
+
+	self.saveNum1 = 1
+	self.saveNum2 = 1
+	self.saveNum3 = 1
+	self.saveNum4 = 1
+	self.saveNum5 = 1
+
+	self:setTouchEnabled(false)
+	self:setTouchSwallowEnabled(true)
+	self:initView()	
+	self:initData()
+
+	self:addNodeEventListener(cc.NODE_EVENT, function (event)
+		if event.name == "enter" then
+			self:onEnter()
+		elseif event.name == "exit" then
+			self:onExit()
+		end
+	end)
+
+end
+
+function WealthLayer:initData()
+	self.arrNums1 = {}
+	self.arrNums2 = {}
+	self.arrNums3 = {}
+	self.arrNums4 = {}
+	self.arrNums5 = {}
+	for i=0,9 do
+		local numSprite1 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite1)
+		numSprite1:setVisible(false)
+
+		local numSprite2 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite2)
+		numSprite2:setVisible(false)
+
+		local numSprite3 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite3)
+		numSprite3:setVisible(false)
+
+		local numSprite4 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite4)
+		numSprite4:setVisible(false)
+
+		local numSprite5 = display.newSprite(string.format("wealth_%d.png",i))
+		self.board:addChild(numSprite5)
+		numSprite5:setVisible(false)
+
+		-- display.newSprite(string.format("image%d", i))
+		table.insert(self.arrNums1,numSprite1)
+		table.insert(self.arrNums2,numSprite2)
+		table.insert(self.arrNums3,numSprite3)
+		table.insert(self.arrNums4,numSprite4)
+		table.insert(self.arrNums5,numSprite5)
+	end
+	--初始位置
+	self.arrNums1[1]:setVisible(true)
+	self.arrNums1[1]:setPosition(465, 311)
+
+	self.arrNums2[1]:setVisible(true)
+	self.arrNums2[1]:setPosition(547, 311)
+
+	self.arrNums3[1]:setVisible(true)
+	self.arrNums3[1]:setPosition(628, 311)
+
+	self.arrNums4[1]:setVisible(true)
+	self.arrNums4[1]:setPosition(710, 311)
+
+	self.arrNums5[1]:setVisible(true)
+	self.arrNums5[1]:setPosition(790, 311)
+
+	-- --创建数字位置
+ --    self:createNumPos1()
+end
+
+function WealthLayer:initView()
+	CommonView.blackLayer2()
+	:addTo(self)
+
+	self.board = display.newSprite(boardImage)
+	:addTo(self)
+	:pos(display.cx,display.cy+20)
+
+	--光圈
+	self.light = display.newSprite(lightImage)
+	:addTo(self.board)
+	:pos(display.cx,display.cy)
+	-- 关闭按钮
+	self.closeBtn = CommonButton.close():addTo(self.board):pos(870,525)
+	:scale(0.8)
+	:onButtonClicked(function()
+		CommonSound.close()
+		self.board:removeFromParent()
+		self:removeFromParent()
+	end)
+	--对话框 文字
+	display.newSprite(talkImage)
+	:addTo(self.board)
+	:pos(100,300)
+
+	base.Label.new({text="文字~", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(30,350)
+
+    --按钮
+    self.btn = cc.ui.UIPushButton.new({normal = btn1,pressed = btn2}, options)
+    :addTo(self.board)
+    :pos(785,120)
+    :onButtonClicked(function ()
+    	-- print("点击..按钮")
+    self.btn:setButtonEnabled(false)
+    self.closeBtn:setButtonEnabled(false)
+    	--创建数字位置
+    self:createNumPos1()
+    self:createNumPos2()
+    self:createNumPos3()
+    self:createNumPos4()
+    self:createNumPos5()
+    -- print("保存的数字是.."..self.saveNum1.."...."..self.saveNum2.."..."..self.saveNum3.."..."..self.saveNum4..".."..self.saveNum5)
+    self.arrNums1[self.saveNum1]:setVisible(false)
+    self.arrNums2[self.saveNum2]:setVisible(false)
+    self.arrNums3[self.saveNum3]:setVisible(false)
+    self.arrNums4[self.saveNum4]:setVisible(false)
+    self.arrNums5[self.saveNum5]:setVisible(false)
+    end)
+
+    --钻石
+    display.newSprite("Diamond60.png")
+    :addTo(self.board)
+    :pos(470,100)
+    :scale(.5)
+    base.Label.new({text="最高可获得~", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(500,100)
+
+    --钻石
+    display.newSprite("Diamond60.png")
+    :addTo(self.board)
+    :pos(500,35)
+    :scale(.5)
+    base.Label.new({text="本次需要:         ".."123456", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(400,35)
+
+    --钻石
+    display.newSprite("Diamond60.png")
+    :addTo(self.board)
+    :pos(750,35)
+    :scale(.5)
+    base.Label.new({text="当前拥有:         "..UserData.diamond, size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(650,35)
+    
+	--添加时间控件
+	self:addTimeWidget()
+
+end
+
+--第一个数字
+local j = 1
+function WealthLayer:createNumPos1()
+	local time = 0.01
+
+	
+	if j >= 11 then
+		j = 1	
+	end
+	if self.movePos1 < 50 then
+		time = 0.15 - math.pow(self.movePos1,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos1 * 0.005
+	end
+	self.arrNums1[j]:setPosition(465, 311)
+	self.arrNums1[j]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums1[j]:setVisible(false)
+		self.movePos1 = self.movePos1+1
+			j = j + 1
+
+			if self.movePos1 < 62+self.serverNum1 then
+				self:createNumPos1()
+			else
+				self.arrNums1[j-1]:setVisible(true)
+				self.movePos1 = 1
+				self.saveNum1 = j-1
+				j = 1
+				self.btn:setButtonEnabled(true)
+				self.closeBtn:setButtonEnabled(true)
+			end
+			
+		
+	end, time)
+end
+--第二个数字
+local k = 1
+function WealthLayer:createNumPos2()
+	local time = 0.01
+
+	
+	if k >= 11 then
+		k = 1	
+	end
+	if self.movePos2 < 50 then
+		time = 0.10 - math.pow(self.movePos2,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos2 * 0.005
+	end
+	self.arrNums2[k]:setPosition(547, 311)
+	self.arrNums2[k]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums2[k]:setVisible(false)
+		self.movePos2 = self.movePos2+1
+			k = k + 1
+
+			if self.movePos2 < 62+self.serverNum2 then
+				self:createNumPos2()
+			else
+				self.arrNums2[k-1]:setVisible(true)
+				self.movePos2 = 1
+				self.saveNum2 = k-1
+				k = 1
+			end
+			
+		
+	end, time)
+
+end
+
+--第三个数字
+local h = 1
+function WealthLayer:createNumPos3()
+	local time = 0.01
+
+	
+	if h >= 11 then
+		h = 1	
+	end
+	if self.movePos3 < 50 then
+		time = 0.07 - math.pow(self.movePos3,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos3 * 0.004
+	end
+	self.arrNums3[h]:setPosition(628, 311)
+	self.arrNums3[h]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums3[h]:setVisible(false)
+		self.movePos3 = self.movePos3+1
+			h = h + 1
+
+			if self.movePos3 < 62+self.serverNum3 then
+				self:createNumPos3()
+			else
+				self.arrNums3[h-1]:setVisible(true)
+				self.movePos3 = 1
+				self.saveNum3 = h-1
+				h = 1
+			end
+			
+		
+	end, time)
+end
+
+--第四个数字
+local l = 1
+function WealthLayer:createNumPos4()
+	local time = 0.01
+
+	
+	if l >= 11 then
+		l = 1	
+	end
+	if self.movePos4 < 50 then
+		time = 0.06 - math.pow(self.movePos4,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos4 * 0.003
+	end
+	self.arrNums4[l]:setPosition(710, 311)
+	self.arrNums4[l]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums4[l]:setVisible(false)
+		self.movePos4 = self.movePos4+1
+			l = l + 1
+
+			if self.movePos4 < 62+self.serverNum4 then
+				self:createNumPos4()
+			else
+				self.arrNums4[l-1]:setVisible(true)
+				self.movePos4 = 1
+				self.saveNum4 = l-1
+				l = 1
+			end
+			
+		
+	end, time)
+end
+
+--第5个数字
+local o = 1
+function WealthLayer:createNumPos5()
+	local time = 0.01
+
+	
+	if o >= 11 then
+		o = 1	
+	end
+	if self.movePos5 < 50 then
+		time = 0.05 - math.pow(self.movePos5,2)*0.0008
+		-- print("time == "..time)
+	else 
+		time = self.movePos4 * 0.002
+	end
+	self.arrNums5[o]:setPosition(790, 311)
+	self.arrNums5[o]:setVisible(true)
+
+	scheduler.performWithDelayGlobal(function ()
+		self.arrNums5[o]:setVisible(false)
+		self.movePos5 = self.movePos5+1
+			o = o + 1
+
+			if self.movePos5 < 62+self.serverNum5 then
+				self:createNumPos5()
+			else
+				self.arrNums5[o-1]:setVisible(true)
+				self.movePos5 = 1
+				self.saveNum5 = o-1
+				o = 1
+			end
+			
+		
+	end, time)
+end
+
+
+--时间控件
+function WealthLayer:addTimeWidget()
+	self.sprite = display.newSprite()
+    :align(display.CENTER)
+    :addTo(self.board)
+    :pos(670, 470)
+
+    self.timeLabel = base.Label.new({text="", size=18, color=cc.c3b(255, 255, 255), border = false})
+    :addTo(self.board)
+    :pos(745, 450)
+
+    self:schedule(function()
+        self:updateTimeShow()
+        -- self:lightAnimation()
+    end, 0.2)
+end
+
+--光圈特效
+function WealthLayer:lightAnimation()
+	local sequence = transition.sequence({
+    cc.ScaleTo:create(0.1, 4),
+    cc.ScaleTo:create(0.1, 1),
+	})
+	self.light:runAction(sequence)
+end
+
+-- 更新时间显示
+function WealthLayer:updateTimeShow()
+    local date = ActivityOpenData:getRemainingDate()
+
+    local timestring = string.format("%02d:%02d:%02d", date.hour, date.min, date.sec)
+
+    if date.day < 8 then
+        self.sprite:setTexture(string.format("font5_%d.png", date.day))
+    end
+    self.timeLabel:setString(timestring)
+
+    self.date = date
+end
+
+function WealthLayer:onEnter()
+	CommonView.animation_show_out(self.board)
+end
+function WealthLayer:onExit()
+	
+end
+
+return WealthLayer

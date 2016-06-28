@@ -1,0 +1,26 @@
+local FeedbackModel = class("FeedbackModel")
+
+function FeedbackModel:ctor()
+	self.items = {}
+	self.process = 1
+	self.isFinish = 0
+	self.rechargeValue = 0
+	self.rechargeLimit = {60,60,60,60,60}
+end
+
+function FeedbackModel:update(data)
+	self.process = data.param2
+	self.rechargeValue = data.param3
+	self.isFinish = data.param4
+	self.items = data.a_param1
+end
+
+function FeedbackModel:setRechargeValue(value)
+	self.rechargeValue = value
+end
+
+function FeedbackModel:getRechargeLimit()
+	return self.rechargeLimit[self.process]
+end
+
+return FeedbackModel

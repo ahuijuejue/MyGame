@@ -1,0 +1,8 @@
+FILE_DIRECTORY=$(dirname "$0")
+
+cd $FILE_DIRECTORY
+
+ver=1.0.1
+
+python mk_flistmodel.py -i $ver/code/ -o $ver/ -ver $ver
+
