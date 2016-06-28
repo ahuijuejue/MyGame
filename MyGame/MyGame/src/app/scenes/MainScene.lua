@@ -70,6 +70,7 @@ function MainScene:ctor()
     -- self:bibaoTest()
 
     display.newTTFLabel({text = " hello world ", size = 30, color = display.COLOR_RED}):addTo(self):pos(display.cx, display.cy)
+    display.newTTFLabel({text = " hello world ", size = 30, color = display.COLOR_RED}):addTo(self):pos(display.cx-100, display.cy)
 
 end
 
