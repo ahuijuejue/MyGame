@@ -1,5 +1,0 @@
-config 配置
-"version" 版本号
-"exclude" 忽略的文件夹 
-
-配置好后，双击make 即可得到 最新版本的 文件夹

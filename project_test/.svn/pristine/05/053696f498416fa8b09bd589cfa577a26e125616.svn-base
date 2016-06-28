@@ -1,4 +1,0 @@
-function setIDFA(idfa)
-	IDFA = idfa
-	print("IDFA:"..IDFA)
-end

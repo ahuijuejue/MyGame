@@ -1,7 +1,0 @@
-
-module("CommonAlert", package.seeall)
-
-
-
-
-

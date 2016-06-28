@@ -1,7 +1,0 @@
-local UnionMemberModel = class("UnionMemberModel")
-
-function UnionMemberModel:ctor()
-
-end
-
-return UnionMemberModel
