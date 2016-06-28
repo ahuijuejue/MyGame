@@ -67,7 +67,9 @@ function MainScene:ctor()
     --[[
         闭包
     --]]
-    self:bibaoTest()
+    -- self:bibaoTest()
+
+    display.newTTFLabel({text = " hello world ", size = 30, color = display.COLOR_RED}):addTo(self):pos(display.cx, display.cy)
 
 end
 
